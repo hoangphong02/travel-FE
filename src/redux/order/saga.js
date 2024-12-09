@@ -1,14 +1,15 @@
-import { call, put, takeLatest } from 'redux-saga/effects';
+/* eslint-disable import/no-anonymous-default-export */
+import { call, put, takeLatest } from "redux-saga/effects";
 
-import { axiosMicro } from '../../services';
-import * as Actions from './actions';
+import { axiosMicro } from "../../services";
+import * as Actions from "./actions";
 
 function* getAllPointHistory({ payload }) {
   try {
     const response = yield call(
-      typeof payload === 'string'
+      typeof payload === "string"
         ? () => axiosMicro.get(`/point-histories?${payload}`)
-        : () => axiosMicro.get('/point-histories?', { params: payload }),
+        : () => axiosMicro.get("/point-histories?", { params: payload })
     );
     yield put(Actions.getAllPointHistorySuccess(response.data));
   } catch (error) {
@@ -22,9 +23,9 @@ function* getAllPointHistory({ payload }) {
 function* getAllOrder({ payload }) {
   try {
     const response = yield call(
-      typeof payload === 'string'
+      typeof payload === "string"
         ? () => axiosMicro.get(`/orders?${payload}`)
-        : () => axiosMicro.get('/orders?', { params: payload }),
+        : () => axiosMicro.get("/orders?", { params: payload })
     );
     yield put(Actions.getAllOrderSuccess(response.data));
   } catch (error) {

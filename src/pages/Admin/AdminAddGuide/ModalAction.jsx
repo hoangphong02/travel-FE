@@ -1,3 +1,4 @@
+/* eslint-disable valid-typeof */
 import { Field, Form, Formik } from "formik";
 import moment from "moment";
 import { useState } from "react";

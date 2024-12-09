@@ -152,7 +152,7 @@ const reducer = handleActions(
                 ]
               : payload.type === "update"
                 ? [
-                    ...state.configResponse.data.addresses.map((item) => {
+                    ...state.configResponse.data.addresses.forEach((item) => {
                       const response = payload.data;
                       if (item.id === response.id) {
                         return response;

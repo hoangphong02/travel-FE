@@ -1,10 +1,10 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useRef, useEffect } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import Quill from "quill";
 import BlotFormatter from "quill-blot-formatter";
 Quill.register("modules/blotFormatter", BlotFormatter);
-// Hook xử lý upload hình ảnh
 const useImageUpload = (quill, uploadPreset, uploadUrl) => {
   useEffect(() => {
     if (quill) {

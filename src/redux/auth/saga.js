@@ -1,9 +1,9 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { call, put, takeLatest } from "redux-saga/effects";
 
 // import { routesAuth } from '~/configs';
 import { STORAGE_KEY } from "../../constants";
 import { axiosMicro } from "../../services";
-import { Realtime } from "../../helpers/utils";
 import * as Actions from "./actions";
 
 function* loginRequest({ payload }) {

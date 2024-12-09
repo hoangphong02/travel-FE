@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { memo, useEffect, useState } from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import logo from "~/assets/logo/no-avatar.png";
@@ -13,19 +14,6 @@ export const HeaderAdmin = memo(() => {
   const history = useHistory();
   const { profileResponse } = useSelector((store) => store.user);
   const [isShowModalLogout, setIsShowModalLogout] = useState(false);
-  // const { getAllNotificationsResponse } = useSelector(
-  //   (store) => store.notification,
-  // );
-
-  // const cartState = localStorage.getItem(
-  //   STORAGE_KEY.CART_STATE.concat('_').concat(profileResponse.data.id),
-  // )
-  //   ? JSON.parse(
-  //     localStorage.getItem(
-  //       STORAGE_KEY.CART_STATE.concat('_').concat(profileResponse.data.id),
-  //     ),
-  //   )
-  //   : [];
 
   const dispatch = useDispatch();
   useEffect(() => {

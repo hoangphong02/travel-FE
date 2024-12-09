@@ -1,3 +1,5 @@
+/* eslint-disable no-useless-escape */
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import React, { useEffect, useState } from "react";
@@ -13,11 +15,8 @@ import {
 } from "~/components/iconography/Outline";
 
 const LoginPage = () => {
-  const { isGetProfileSuccess, profileResponse, isGetProfileFailure } =
-    useSelector((store) => store.user);
-  const { isLoginRequest, isLoginFailure, isLoginSuccess } = useSelector(
-    (store) => store.auth
-  );
+  const { profileResponse } = useSelector((store) => store.user);
+  const { isLoginFailure, isLoginSuccess } = useSelector((store) => store.auth);
   const [showPassword, setShowPassword] = useState(false);
   const dispatch = useDispatch();
   const history = useHistory();

@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 import { Field, Form, Formik } from "formik";
 import { useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";

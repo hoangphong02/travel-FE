@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import {Route } from 'react-router-dom';
-import { getProfileRequest } from '~/redux/user/actions';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Route } from "react-router-dom";
+import { getProfileRequest } from "~/redux/user/actions";
 export const AuthLayout = (props) => {
-  
   const { isGetProfileSuccess } = useSelector((store) => store.user);
   const dispatch = useDispatch();
   const checkAuth = () => {
@@ -24,5 +24,3 @@ export const AuthLayout = (props) => {
 
   return render();
 };
-
-

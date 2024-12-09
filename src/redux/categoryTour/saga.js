@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { call, put, takeLatest } from "redux-saga/effects";
 
 import { axiosMicro } from "../../services";

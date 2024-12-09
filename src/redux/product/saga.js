@@ -1,14 +1,15 @@
-import { call, put, takeLatest } from 'redux-saga/effects';
+/* eslint-disable import/no-anonymous-default-export */
+import { call, put, takeLatest } from "redux-saga/effects";
 
-import { axiosMicro } from '../../services';
-import * as Actions from './actions';
+import { axiosMicro } from "../../services";
+import * as Actions from "./actions";
 
 function* getAllProducts({ payload }) {
   try {
     const response = yield call(
-      typeof payload === 'string'
+      typeof payload === "string"
         ? () => axiosMicro.get(`/product/getAll?${payload}`)
-        : () => axiosMicro.get('/product/getAll', { params: payload }),
+        : () => axiosMicro.get("/product/getAll", { params: payload })
     );
     yield put(Actions.getAllProductsSuccess(response.data));
   } catch (error) {
@@ -22,9 +23,9 @@ function* getAllProducts({ payload }) {
 function* getListProducts({ payload }) {
   try {
     const response = yield call(
-      typeof payload === 'string'
+      typeof payload === "string"
         ? () => axiosMicro.get(`/products/list?${payload}`)
-        : () => axiosMicro.get('/products/list', { params: payload }),
+        : () => axiosMicro.get("/products/list", { params: payload })
     );
     yield put(Actions.getListProductsSuccess(response.data));
   } catch (error) {
@@ -37,7 +38,7 @@ function* getListProducts({ payload }) {
 
 function* createProduct({ payload }) {
   try {
-    const response = yield call(() => axiosMicro.post('/products', payload));
+    const response = yield call(() => axiosMicro.post("/products", payload));
     yield put(Actions.createProductSuccess(response.data));
   } catch (error) {
     if (error?.response?.data) {
@@ -50,7 +51,7 @@ function* createProduct({ payload }) {
 function* updateProduct({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.patch(`/products/${payload.id}`, payload.body),
+      axiosMicro.patch(`/products/${payload.id}`, payload.body)
     );
     yield put(Actions.updateProductSuccess(response.data));
   } catch (error) {
@@ -75,7 +76,7 @@ function* deleteProduct({ payload }) {
 
 function* getListCategories() {
   try {
-    const response = yield call(() => axiosMicro.get('/categories?limit=0'));
+    const response = yield call(() => axiosMicro.get("/categories?limit=0"));
     yield put(Actions.getListCategoriesSuccess(response.data));
   } catch (error) {
     if (error?.response?.data) {

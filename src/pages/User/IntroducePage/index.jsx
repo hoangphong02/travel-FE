@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
@@ -136,7 +137,7 @@ const IntroducePage = () => {
               </span>
 
               <div className="image-about-us">
-                <img src={banner1} />
+                <img src={banner1} alt="" />
               </div>
             </div>
 

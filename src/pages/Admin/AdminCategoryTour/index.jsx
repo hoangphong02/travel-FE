@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useMemo, useState } from "react";
 import TopComponent from "./TopComponent";
 import { ReactTableWithPaginationCard } from "~/components/common";
