@@ -1,0 +1,261 @@
+.contact-container {
+    padding-top: 160px;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #f4f4f4;
+    margin-bottom: 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .left-col {
+        width: 45vw;
+        height: 100%;
+        background-image: url("../../../assets//logo/image-contact.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .logo {
+            width: 10rem;
+            padding: 1.5rem;
+        }
+    }
+
+    .right-col {
+        background: #f4f4f4;
+        width: 50vw;
+        height: auto;
+        padding: 0.5rem 3rem;
+
+        h1,
+        label,
+        button,
+        .description {
+            font-family: 'Jost', sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.1rem;
+        }
+
+        h1 {
+            color: #000;
+            text-transform: uppercase;
+            font-size: 2rem;
+            letter-spacing: 0.5rem;
+            font-weight: 300;
+        }
+
+        p {
+            color: #777;
+            font-size: 0.9rem;
+            letter-spacing: 0.01rem;
+            width: 40vw;
+            margin: 0.25rem 0;
+        }
+
+        label,
+        .description {
+            color: #777;
+            text-transform: uppercase;
+            font-size: 0.625rem;
+        }
+
+        form {
+            width: 31.25rem;
+            position: relative;
+            margin-top: 2rem;
+            padding: 1rem 0;
+
+            .item-form {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+            }
+
+            input,
+            textarea,
+            label {
+                width: 40vw;
+                display: block;
+            }
+
+            input,
+            textarea {
+                color: #333;
+                font-weight: 500;
+                background: #f4f4f4;
+                border: none;
+                border-bottom: 1px solid #777;
+                padding: 0.5rem 0;
+                margin-bottom: 1rem;
+                outline: none;
+
+                &::placeholder {
+                    color: #333;
+                }
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+
+            textarea {
+                resize: none;
+            }
+
+            button {
+                text-transform: uppercase;
+                font-weight: 300;
+                background: #000;
+                color: #fff;
+                width: 10rem;
+                height: 2.25rem;
+                border: none;
+                border-radius: 2px;
+                outline: none;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+
+                &:active {
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        #error,
+        #success-msg {
+            width: 40vw;
+            margin: 0.125rem 0;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-family: 'Jost';
+            color: #777;
+        }
+
+        #success-msg {
+            transition-delay: 3s;
+        }
+
+        .theme-switch-wrapper {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 160px;
+            position: absolute;
+            top: 0.5rem;
+            right: 0;
+
+            .description {
+                margin-left: 1.25rem;
+            }
+
+            .theme-switch {
+                display: inline-block;
+                height: 34px;
+                position: relative;
+                width: 60px;
+
+                input {
+                    display: none;
+                }
+
+                .slider {
+                    background-color: #ccc;
+                    bottom: 0;
+                    cursor: pointer;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transition: 0.4s;
+
+                    &:before {
+                        background-color: #fff;
+                        bottom: 0.25rem;
+                        content: "";
+                        width: 26px;
+                        height: 26px;
+                        left: 0.25rem;
+                        position: absolute;
+                        transition: 0.4s;
+                    }
+                }
+
+                input:checked+.slider {
+                    background-color: #000;
+
+                    &:before {
+                        transform: translateX(26px);
+                    }
+                }
+
+                .round {
+                    border-radius: 34px;
+
+                    &:before {
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .contact-container {
+        .left-col {
+            .logo {
+                width: 8rem;
+            }
+        }
+
+        .right-col {
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            p {
+                font-size: 0.7rem;
+            }
+
+            input,
+            textarea,
+            button {
+                font-size: 0.65rem;
+            }
+
+            .description {
+                font-size: 0.3rem;
+                margin-left: 0.4rem;
+            }
+
+            button {
+                width: 7rem;
+            }
+
+            .theme-switch-wrapper {
+                width: 120px;
+
+                .theme-switch {
+                    height: 28px;
+                    width: 50px;
+
+                    .slider:before {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    input:checked+.slider:before {
+                        transform: translateX(16px);
+                    }
+
+                    .round {
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

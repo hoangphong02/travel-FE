@@ -1,0 +1,126 @@
+.work-schedule-page{
+    padding-top: 160px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto ;
+
+    .filter{
+        .title{
+            font-size: 24px;
+                color: var(--color-secondary-brand-blue);
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+            
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    width: fit-content;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+            
+                    .line-1 {
+                        width: 60%;
+                        height: 1px;
+                        background-color: var(--color-brand-blue);
+                    }
+            
+                    .line-2 {
+                        width: 100%;
+                        height: 2px;
+                        background-color: var(--color-brand-blue);
+                    }
+                }
+        }
+        .filter-date{
+            margin: 16px 0;
+            display: flex;
+            gap: 32px;
+            div{
+                display: flex;
+                gap: 8px;
+                label{
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                input{
+                    padding: 0px 24px;
+                    border-radius: 4px;
+                    border: 1px solid var(--color-brand-blue);
+                }
+            }
+        }
+    }
+    .table {
+              .card {
+                  border: none;
+              }
+    
+              .table-scroll-y-custom {
+                  padding: 0;
+                  border-radius: 10px;
+    
+                  table {
+                      border: 1px solid var(--color-secondary-brand-blue);
+                      border-spacing: 0px;
+                      overflow: hidden;
+                      border-spacing: 8px;
+    
+    
+                      thead {
+                          background-color: var(--color-secondary-brand-blue) !important;
+                          border-radius: 0px;
+    
+                          th {
+                            text-align: left;
+                              padding: 10px;
+                              font-size: 14px;
+                              background-color: var(--color-secondary-brand-blue);
+                              color: #fff;
+                          }
+                      }
+    
+                      tbody {
+                          tr {
+                              td {
+                                  padding: 10px;
+                                  font-size: 14px;
+                                  text-align: left;
+    
+                                  .btn-see-tour {
+                                      display: flex;
+                                      justify-content: center;
+    
+                                      button {
+    
+                                          background-color: var(--color-secondary-brand-blue);
+                                          border: none;
+                                          padding: 8px 20px;
+                                          border-radius: 20px;
+                                          color: #fff;
+                                      }
+                                  }
+                              }
+    
+                          }
+                      }
+                  }
+              }
+          }
+
+        }
+        .modal-list-user{
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          .item-user{
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+              border: 1px solid #cbcbcb;
+              padding: 8px;
+              border-radius: 12px;
+          }
+        }

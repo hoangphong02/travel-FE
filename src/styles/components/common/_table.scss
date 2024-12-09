@@ -1,0 +1,16 @@
+.table-scroll-y-custom {
+    table {
+        width: 100%;
+        max-width: 1200px;
+    }
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 50px;
+    gap: 10px;
+    list-style: none;
+}

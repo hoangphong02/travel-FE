@@ -1,0 +1,74 @@
+.card-tour {
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 350px;
+
+    img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .info-card {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-align: left;
+        border-bottom: 0.5px dashed var(--color-secondary-brand-blue);
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        button {
+            background-color: var(--color-brand-blue);
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+            width: fit-content;
+            padding: 8px 32px;
+            border-radius: 16px;
+            border: none;
+
+            &:hover {
+                background-color: var(--color-brand-orange);
+                color: #fff;
+                border: none;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+        align-items: center;
+        color: var(--color-brand-blue);
+
+        .left {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .right {
+
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            div {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+            }
+
+            svg {
+                color: var(--color-brand-blue);
+            }
+        }
+    }
+}

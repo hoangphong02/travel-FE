@@ -1,0 +1,374 @@
+.booking-page-wrapper {
+    padding-top: 160px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 16px;
+
+    &-left {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        &-section-1 {
+            border: 1px solid #263593;
+            border-radius: 8px;
+            // overflow: hidden;
+
+            .top {
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 16px;
+                background-color: #263593;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                padding: 16px;
+                text-align: left;
+
+                .tour-require {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    input {
+                        padding: 12px 16px;
+                        border-radius: 8px;
+                        border: 1px solid #cbcbcb;
+                        outline: #263593;
+                    }
+                }
+
+                .title {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                .list-option {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 4px;
+
+                    .option {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        input{
+                            border-radius: 8px;
+                            padding: 12px 8px;
+                            border: 1px solid #cbcbcb;
+                            outline: none;
+                        }
+
+                        select {
+                            padding: 16px 4px;
+                            border-radius: 8px;
+                            border: 1px solid var(--color-secondary-black);
+                            min-width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-section-2 {
+            border: 1px solid #263593;
+            border-radius: 8px;
+            overflow: hidden;
+
+            .top {
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 16px;
+                background-color: #263593;
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                padding: 16px;
+                text-align: left;
+
+                .tour-require {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    input {
+                        padding: 16px;
+                        border-radius: 8px;
+                        border: 1px solid var(--color-secondary-black);
+                        outline: #263593;
+                    }
+                }
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .list-option {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 16px;
+
+                    .option {
+                        display: flex;
+                        gap: 8px;
+                        align-items: center;
+
+                        span {
+                            font-size: 14px;
+                        }
+
+                        input {
+                            max-width: 140px;
+                            padding: 12px 8px;
+                            border-radius: 8px;
+                            border: 1px solid var(--color-secondary-black);
+                            outline: #263593;
+                        }
+
+                        select {
+                            padding: 16px 4px;
+                            border-radius: 8px;
+                            border: 1px solid var(--color-secondary-black);
+                            min-width: 30%;
+                        }
+                    }
+                }
+
+                .list-option-price{
+                    display: flex;
+                    gap: 24px;
+                    justify-content: space-between;
+
+                    .option{
+                        width: 50%;
+                        .title{
+                            font-size: 16px;
+                        }
+
+                        .input-price{
+                            margin-top: 8px;
+                            display: flex;
+                            input{
+                                border: 1px solid #CBCBCB;
+                                width: 100%;
+                                padding: 4px 16px;
+                                color:#263593;
+                                font-weight: 600;
+                                font-size: 18px;
+                                border-top-left-radius: 4px;
+                                border-bottom-left-radius: 4px;
+                            }
+                            
+                            .unit{
+                                background-color: #CBCBCB;
+                                padding: 8px;
+                            }
+                        }
+                    }
+                }
+
+                .list-total-price{
+                    width: 100%;
+                    margin-top: 12px;
+                    
+                    .body{
+                        display: flex;
+                        gap: 12px;
+                        .title{
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: #263593;
+                        }
+
+                        .input-price{
+                            flex: 1;
+                            display: flex;
+                            input{
+                                width: 100%;
+                                border: 1px solid #CBCBCB;
+                                    padding: 4px 16px;
+                                    color: #263593;
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    border-top-left-radius: 4px;
+                                    border-bottom-left-radius: 4px;
+                            }
+
+                            .unit {
+                                    background-color: #CBCBCB;
+                                    padding: 8px;
+                                }
+                        }
+                    }
+                }
+            }
+
+            .date-book-tour {
+                display: flex;
+                gap: 16px;
+                align-items: center;
+
+                input {
+                    padding: 8px 16px;
+                    border-radius: 8px;
+                    border: 0.5px solid var(--color-secondary-black);
+                }
+            }
+        }
+
+        &-section-3 {
+            border: 1px solid #263593;
+            border-radius: 8px;
+            overflow: hidden;
+
+            .top {
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 16px;
+                background-color: #263593;
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                padding: 16px;
+                text-align: left;
+
+                .tour-require {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    input {
+                        padding: 16px;
+                        border-radius: 8px;
+                        border: 1px solid var(--color-secondary-black);
+                        outline: #263593;
+                    }
+                }
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .list-option {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 16px;
+
+                    .option {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        select {
+                            padding: 16px 4px;
+                            border-radius: 8px;
+                            border: 1px solid var(--color-secondary-black);
+                            min-width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    &-right {
+        width: 40%;
+        border: 1px solid #263593;
+        border-radius: 8px;
+        height: fit-content;
+
+        &-body {
+            .top {
+                padding: 16px;
+                background-color: #263593;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                font-size: 18px;
+                color: #fff;
+                font-weight: 700;
+            }
+
+            .form {
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                input {
+                    padding: 16px;
+                    border-radius: 8px;
+                    border: 1px solid var(--color-secondary-black);
+                    outline: #263593;
+                }
+
+                textarea {
+                    border-radius: 8px;
+                    padding: 16px;
+                    border: 1px solid var(--color-secondary-black);
+                    outline: #263593;
+                }
+            }
+
+            .bottom {
+                padding: 16px;
+
+                button {
+                    padding: 8px 16px;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #fff;
+                    background-color: #ffb13e;
+                    border: none;
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+    .paypal-buttons{
+        &:last-child{
+
+            display: none !important;
+        }
+    }
+}

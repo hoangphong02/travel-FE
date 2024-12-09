@@ -1,0 +1,26 @@
+#header-admin {
+    .header-admin--inner {
+        display: flex;
+        padding: 24px 32px;
+        justify-content: end;
+        box-shadow: 0 1px 15px rgba(0, 0, 0, .04),
+            0 1px 6px rgba(0, 0, 0, .04);
+
+
+        &--left {
+            img {
+                height: 60px;
+                width: auto;
+                object-fit: cover;
+            }
+        }
+
+        &--right {
+            img {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

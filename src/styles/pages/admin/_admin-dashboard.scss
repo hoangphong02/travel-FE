@@ -1,0 +1,112 @@
+.page-dashboard{
+    padding: 16px;
+    .main-cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: (1fr 1fr 1fr 1fr);
+        gap: 12px;
+
+        .card{
+            padding: 8px;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .card-inner{
+                display: flex;
+                justify-content: space-between;
+                h3{
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+            h2{
+                font-size: 20px;
+                text-align: left;
+                margin: 0;
+            }
+            &:nth-child(1){
+                background-color: #FF6B6B;
+                border: #FF6B6B;
+            }
+            &:nth-child(2) {
+                background-color: #4ECDC4;
+                border: #4ECDC4;
+            }
+            &:nth-child(3){
+                background-color: #FFD93D;
+                border: #FFD93D;
+            }
+            &:nth-child(4) {
+                background-color: #95c9f5;
+                border: #95c9f5;
+            }
+                      
+        }
+    }
+
+    .chart-total-price-of-month{
+        margin-top: 32px;
+        p{
+            text-align: left;
+            font-size: 18px;
+            font-weight: 600;
+            color: #08428c;
+        }
+    }
+
+    .list-tour{
+        display: flex;
+        justify-content: space-around;
+        .list-tour-main{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            .title{
+                text-align: left;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #08428c;
+            }
+            .tour-main{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+
+                img{
+                    height: 80px;
+                    width: 80px;
+                    object-fit: cover;
+                }
+                .body{
+                    display: flex;
+                    gap: 16px;
+
+                    .name{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: left;
+                        justify-content: space-around;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.admin-layout .sidebar{
+    position: fixed !important;
+}
+
+// #header-admin{
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     width: 100%;
+//     z-index: 999;
+// }
+
+// .container-fluid{
+//     margin-top: 100px;
+// }

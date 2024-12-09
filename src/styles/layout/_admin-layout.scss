@@ -1,0 +1,16 @@
+.admin-layout {
+    height: fit-content;
+    position: relative;
+    min-height: 100vh;
+
+    .sidebar {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    main {
+        margin-left: 270px;
+        width: 100%;
+    }
+}

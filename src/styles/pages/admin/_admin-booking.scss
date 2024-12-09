@@ -1,0 +1,130 @@
+.admin-booking-page {
+    .top {
+        padding: 32px 32px 0 32px;
+
+        .body {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            button {
+                background-color: var(--color-brand-blue);
+                border: none;
+                border-radius: 32px;
+                padding: 8px 40px;
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .search {
+        display: flex;
+        gap: 16px;
+        padding: 16px 40px;
+        
+
+        .body {
+            border: 1px solid var(--color-secondary-black);
+            display: flex;
+            width: fit-content;
+            padding: 0 12px 0 0;
+            border-radius: 8px;
+
+            input {
+                padding: 0 8px;
+                border: none;
+                outline: none;
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                svg {
+                    height: 14px;
+                    width: 14px;
+                }
+
+                &:hover {}
+            }
+
+            .select-type{
+                div{
+                    border-radius: 7px 0 0 7px;;
+                }
+            }
+        }
+
+        .filter {
+            display: flex;
+            gap: 16px;
+
+        }
+    }
+
+    .table {
+        padding: 0 32px;
+        min-width: 100%;
+
+
+        .card {
+            margin: 0 auto;
+            border: none;
+
+            thead {
+                th {
+                    background-color: #ececec;
+                    padding: 12px 0;
+                    text-align: left;
+                    padding-left: 8px;
+
+                    &:nth-child(1) {
+                        padding-left: 8px;
+                    }
+                }
+            }
+
+            tbody {
+                td {
+                    padding: 8px 16px;
+                    text-align: left;
+                }
+            }
+
+
+            .icon-button {
+                padding: 8px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:nth-child(1) {
+                    border: 1px solid var(--color-brand-blue);
+
+                    svg {
+                        path {
+
+                            fill: var(--color-brand-blue);
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    border: 1px solid var(--color-red);
+
+                    svg {
+                        path {
+
+                            fill: var(--color-red);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

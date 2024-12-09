@@ -1,0 +1,164 @@
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #000;
+}
+
+.nav-pills .nav-link {
+    border-radius: 50px;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+
+
+
+    &.active {
+        color: #000;
+    }
+}
+
+.page-item {
+    padding: 10px;
+
+
+    .page-link {
+        outline: initial !important;
+        box-shadow: initial !important;
+        line-height: 1.7;
+        border-radius: 40px !important;
+        min-width: 38px;
+        text-align: center;
+        height: 38px;
+        padding: 0.55rem 0;
+
+
+
+        &.next {
+            background: #ddd;
+            color: #ffffff;
+            border: 1px solid #000;
+        }
+
+        &.prev,
+        &.prev {
+            background: #ddd;
+            border: 1px solid #000;
+            color: #fff;
+        }
+
+        &.first,
+        &.last {
+            background: transparent;
+            color: #000;
+            border: 1px solid #000;
+            border-radius: 30px;
+
+            &:hover {
+                background: #000;
+                color: #fff;
+                border: 1px solid #000;
+            }
+        }
+
+        &:hover {
+            background-color: transparent;
+            border-color: lighten(#000, 10%);
+            color: #000;
+        }
+    }
+
+    &.active .page-link {
+        pointer-events: none;
+        background: transparent;
+        border: 1px solid #000;
+        color: #000;
+    }
+
+    &.disabled .page-link {
+        border-color: #ddd;
+        color: #ddd;
+        background: transparent;
+    }
+}
+
+.page-link {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-sm.page-link {
+    padding: 0.5rem 0.5rem;
+}
+
+.pagination-lg {
+    .page-item {
+        padding: 15px;
+
+
+        .page-link {
+            min-width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+.pagination-sm {
+    .page-item {
+        padding: 6px;
+
+
+        .page-link {
+            min-width: 30px;
+            height: 30px;
+            line-height: 0.9;
+            font-size: 0.76rem;
+        }
+    }
+}
+
+.rtl {
+    .pagination {
+        .page-link.prev {
+            i::before {
+                content: "\e606";
+            }
+        }
+
+        .page-link.next {
+            i::before {
+                content: "\e605";
+            }
+        }
+
+        .page-link.first {
+            i::before {
+                content: "\e074";
+            }
+        }
+
+        .page-link.last {
+            i::before {
+                content: "\e06f";
+            }
+        }
+    }
+
+    .nav,
+    .pagination {
+        padding-right: 0;
+    }
+
+    .nav-tabs.separator-tabs .nav-link {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+
+    .nav-pills .nav-link {
+        text-align: center;
+    }
+}
+
+#notificationDropdown .nav-link {
+    padding: 0 !important;
+}

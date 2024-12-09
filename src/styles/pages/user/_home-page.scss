@@ -1,0 +1,744 @@
+.home-page {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .banner-introduce {
+        .slick-slider {
+            position: relative;
+
+            .slick-list {
+
+                .slick-track {
+                    display: flex;
+
+                    // img {
+                    //     filter: brightness(0.8);
+                    //     width: 100%;
+                    //     object-fit: cover;
+                    // }
+
+                    .slick-active{
+                        .information-tour-slide {
+                                .category {
+                                    animation: slideDown 1s ease-in-out;
+                                }
+                        
+                                .name-tour {
+                                    animation: slideUp 1s ease-in-out;
+                                }
+                        
+                                .price-tour {
+                                    animation: slideRight 1s ease-in-out;
+                                }
+                        
+                                button {
+                                    animation: slideLeft 1s ease-in-out;
+                                }
+                            }
+                    }
+                }
+            }
+
+            .slick-prev {
+                position: absolute;
+                left: 20px;
+                top: 50%;
+                height: 50px;
+                width: 50px;
+                background-color: aliceblue;
+                opacity: 0.8;
+                border-radius: 50%;
+                z-index: 2;
+                display: none !important;
+                cursor: pointer;
+
+                svg {
+                    vertical-align: -20px;
+                }
+            }
+
+            .slick-next {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                height: 50px;
+                width: 50px;
+                background-color: aliceblue;
+                opacity: 0.8;
+                border-radius: 50%;
+                z-index: 2;
+                display: none !important;
+                cursor: pointer;
+
+                svg {
+                    vertical-align: -20px;
+                }
+            }
+
+            &:hover {
+                .slick-prev {
+                    display: block !important;
+                    animation: slideInLeft 0.5s ease-out forwards;
+                }
+
+                .slick-next {
+                    display: block !important;
+                    animation: slideInRight 0.5s ease-out forwards;
+                }
+            }
+        }
+        .slider-home-page{
+            height: 820px;
+            width: 100%;
+            overflow: hidden;
+
+            .slider-home-item{
+                position: relative;
+                img {
+                        filter: brightness(0.8);
+                        width: 100%;
+                        height: 820px;
+                        object-fit: cover;
+                    }
+                .information-tour-slide{
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    top: 50%;
+                    transform:translateY(-50%);
+                    left: 10%;
+                    color: #fff;
+                    text-align: left;
+                    .category{
+                        font-size: 52px;
+                        line-height: 60px;
+                        font-weight: 600;
+                    }
+                    .name-tour {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                    .price-tour {
+                        font-size: 32px;
+                        font-weight: 600;
+                     }
+                     button{
+                        padding: 8px 24px;
+                        width: fit-content;
+                        background: none;
+                        border: 2px solid #fff;
+                        border-radius: 32px;
+                        text-transform: uppercase;
+                        font-size: 18px;
+
+                        &:hover{
+                            background: #3880bb;
+                            border: 2px solid #3880bb;
+                        }
+                     }
+                }
+            }
+        }
+    }
+
+    .list-tour-trending-month {
+        .title {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .slick-slider {
+            position: relative;
+
+
+            .slick-list {
+                padding: 10px;
+
+                .slick-track {
+                    display: flex;
+                    gap: 10px;
+
+                    .slick-slide {
+                        border-radius: 20px;
+                        overflow: hidden;
+
+                        .item-tour-trending {
+                            height:300px;
+                            position: relative;
+                            transition: all 1s ease-in-out;
+                            img {
+                                    filter: brightness(0.6);
+                                }
+                            .info-tour {
+                                width: 100%;
+                                position: absolute;
+                                    bottom: 20px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    display: flex;
+                                    gap: 8px;
+                                    flex-direction: column;
+                                    align-items: center;
+                                span {
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                    color: #fff;
+                                }
+
+                                .btn-book {
+                                    padding: 4px 20px;
+                                    border-radius: 8px;
+                                    border: 1px solid #fff;
+                                    cursor: pointer;
+                                    width: fit-content;
+                                    border-radius: 16px;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                
+                            }
+
+                            &:hover {
+                                scale: 1.1;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .slick-prev {
+                position: absolute;
+                left: 20px;
+                top: 50%;
+                height: 50px;
+                width: 50px;
+                background-color: aliceblue;
+                opacity: 0.8;
+                border-radius: 50%;
+                z-index: 2;
+                display: none !important;
+                cursor: pointer;
+                svg {
+                    vertical-align: -20px;
+                }
+            }
+
+            .slick-next {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                height: 50px;
+                width: 50px;
+                background-color: aliceblue;
+                opacity: 0.8;
+                border-radius: 50%;
+                z-index: 2;
+                display: none !important;
+                cursor: pointer;
+                svg {
+                    vertical-align: -20px;
+                }
+            }
+
+            &:hover {
+                .slick-prev {
+                    display: block !important;
+                    animation: slideInLeft 0.5s ease-out forwards;
+                }
+
+                .slick-next {
+                    display: block !important;
+                    animation: slideInRight 0.5s ease-out forwards;
+                }
+            }
+        }
+    }
+
+    .list-tour-main {
+        width: 100%;
+
+
+        .title {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .list-tour-main-body {
+            height: 500px;
+            padding: 20px 0;
+            display: flex;
+            width: 100%;
+
+
+            .list-tour-main-body-left {
+                width: 50%;
+                height: 100%;
+                text-align: left;
+
+                .items {
+                    position: relative;
+                    cursor: pointer;
+                    transition: all 0.5s ease-in-out;
+                    overflow: hidden;
+                    img {
+                        height: 500px;
+                        width: 100%;
+                        transition: all 0.5s ease-in-out;
+                        
+                    }
+                    &:hover img{
+                        scale: 1.1;
+                    }
+
+
+                    .items-info {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        top: 20px;
+                        z-index: 2;
+                        display: flex;
+                        gap: 8px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 32px;
+                        span {
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: #fff;
+                        }
+                        .name{
+                            display: flex;
+                            flex-direction: column;
+                            span {
+                                    &:nth-child(1){
+                                        font-size: 32px;
+                                            font-weight: 700;
+                                            color: #fff;
+                                    }
+                                    &:nth-child(2) {
+                                        font-size: 18px;
+                                        font-weight: 400;
+                                        color: #fff;
+                                    }
+                            }
+                        }
+
+                        .btn-book {
+                            padding: 4px 20px;
+                            border-radius: 50px;
+                            border: 1px solid #fff;
+                            width: fit-content;
+                        }
+                    }
+                    .bg{
+                        position: absolute;
+                            content: '';
+                            height: 100%;
+                            width: 100%;
+                            top: 0;
+                            left: 0;
+                            background: rgba(0, 0, 0, .3);
+                    }
+
+                }
+            }
+
+            .list-tour-main-body-right {
+                width: 50%;
+                &-top {
+                    display: flex;
+                    height: 250px;
+
+                    .items {
+                        cursor: pointer;
+                        width: 50%;
+                        height: 100%;
+                        position: relative;
+                        transition: all 0.5s ease-in-out;
+                        overflow: hidden;
+                        img {
+                            height: 250px;
+                            width: 100%;
+                            transition: all 0.5s ease-in-out;
+                        }
+                                                 &:hover img {
+                                                     scale: 1.1;
+                                                 }
+
+                        .items-info {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            z-index: 2;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 8px;
+                            justify-content: center;
+                            top: 20px;
+                            padding: 32px;
+                            span {
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: #fff;
+                            }
+                                                        .name {
+                                                            display: flex;
+                                                            flex-direction: column;
+                            
+                                                            span {
+                                                                &:nth-child(1) {
+                                                                    font-size: 20px;
+                                                                    font-weight: 600;
+                                                                    color: #fff;
+                                                                }
+                            
+                                                                &:nth-child(2) {
+                                                                    font-size: 18px;
+                                                                    font-weight: 400;
+                                                                    color: #fff;
+                                                                }
+                                                            }
+                                                        }
+
+                            .btn-book {
+                                padding: 4px 20px;
+                                    border-radius: 50px;
+                                border: 1px solid #fff;
+                                width: fit-content;
+                            }
+                        }
+                            .bg {
+                                position: absolute;
+                                content: '';
+                                height: 100%;
+                                width: 100%;
+                                top: 0;
+                                left: 0;
+                                background: rgba(0, 0, 0, .3);
+                        }
+
+                    }
+                }
+
+                &-bottom {
+                    display: flex;
+                    height: 250px;
+                    cursor: pointer;
+
+                    .items {
+                        width: 50%;
+                        height: 100%;
+                        position: relative;
+                        overflow: hidden;
+
+                        img {
+                            height: 250px;
+                            width: 100%;
+                            transition: all 0.5s ease-in-out;
+                        }
+                                                 &:hover img {
+                                                     scale: 1.1;
+                                                 }
+
+                        .items-info {
+                            position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                                z-index: 2;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 8px;
+                                justify-content: center;
+                                top: 20px;
+                                padding: 32px;
+
+                            span {
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: #fff;
+                            }
+                                                        .name {
+                                                            display: flex;
+                                                            flex-direction: column;
+                            
+                                                            span {
+                                                                &:nth-child(1) {
+                                                                    font-size: 20px;
+                                                                    font-weight: 600;
+                                                                    color: #fff;
+                                                                }
+                            
+                                                                &:nth-child(2) {
+                                                                    font-size: 18px;
+                                                                    font-weight: 400;
+                                                                    color: #fff;
+                                                                }
+                                                            }
+                                                        }
+
+                            .btn-book {
+                                padding: 4px 20px;
+                                    border-radius: 50px;
+                                border: 1px solid #fff;
+                            }
+                        }
+                                                .bg {
+                                                    position: absolute;
+                                                    content: '';
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    top: 0;
+                                                    left: 0;
+                                                    background: rgba(0, 0, 0, .3);
+                                                }
+
+                    }
+                }
+
+
+
+            }
+        }
+    }
+
+    .list-tour-options {
+
+        .title {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        &--content {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+
+            .option {
+                cursor: pointer;
+                width: 250px;
+                height: 350px;
+                border-radius: 20px;
+                overflow: hidden;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 350px;
+                    object-fit: cover;
+                    transition: all 0.5s ease-in-out;
+                    &:hover{
+                        scale: 1.1;
+                    }
+
+                }
+
+                .option-info {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    color: #fff;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .list-blog {
+        padding: 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px 0;
+        margin-bottom: 80px;
+
+        .title {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .category-blog{
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            margin: 16px 0;
+
+            &-item{
+                cursor: pointer;
+                position: relative;
+                width: 50%;
+                border-radius: 16px;
+                overflow: hidden;
+                transition: all 1s ease-in-out;
+             
+                img{
+                    width: 50%;
+                    transition: all 1s ease-in-out;
+                    &:hover {
+                            scale: 1.1;
+                        }
+                }
+
+                .info-blog{
+                    position: absolute;
+                    z-index: 2;
+                    bottom: 20px;
+                    left: 0;
+                    width: 100%;
+                    display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 16px;
+                    .name{ 
+                        font-size: 24px ;
+                        line-height: 22px;
+                        font-weight: 600;
+                        color: #fff;
+                    }
+                    .description{
+                        font-size: 14px;
+                        color: #fff;
+                        padding: 0 16px;
+                    }
+                    .btn-more{
+                        border: 2px solid #fff;
+                        padding: 4px 12px;
+                        width: fit-content;
+                        text-align: center;
+                        color: #fff;
+                        border-radius: 16px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .list-blog-body {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .blog-items {
+                cursor: pointer;
+                img {
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 8px;
+                }
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+
+                .name {
+                    font-weight: 600;
+                }
+
+                .des {
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 1.6;
+
+                }
+
+                .btn-more {
+                    border: 1px solid #000;
+                    border-radius: 20px;
+                    width: fit-content;
+                    text-align: center;
+                    padding: 8px 20px;
+                }
+            }
+        }
+    }
+
+}
+
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

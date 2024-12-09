@@ -1,0 +1,39 @@
+.tour-page-wrapper {
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    .title {
+        font-size: 24px;
+        font-weight: 600;
+        text-align: left;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .line-1 {
+            width: 60%;
+            height: 1px;
+            background-color: var(--color-brand-blue);
+        }
+
+        .line-2 {
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-brand-blue);
+        }
+    }
+
+    .list-tour {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}

@@ -1,0 +1,36 @@
+.card-blog {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+
+    &-image {
+        img {
+            height: 200px;
+            width: 360px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        .name {}
+
+        .des {
+            font-size: 13px;
+        }
+
+        button {
+            width: fit-content;
+            background-color: var(--color-brand-blue);
+            padding: 8px 24px;
+        }
+    }
+}
