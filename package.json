@@ -65,6 +65,7 @@
     "zustand": "^4.5.2"
   },
   "scripts": {
+    "install": "npm install --legacy-peer-deps",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
