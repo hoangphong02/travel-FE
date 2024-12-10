@@ -66,8 +66,9 @@
     "zustand": "^4.5.2"
   },
   "scripts": {
+    "install:force": "npm install -f",
+    "build": "npm run install:force && react-scripts build",
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build --no-eslint",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"src/**/*.js\"",
