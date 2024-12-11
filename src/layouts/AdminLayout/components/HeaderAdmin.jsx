@@ -8,7 +8,7 @@ import { Button, ButtonGroup, Dropdown, Modal } from "react-bootstrap";
 import { logoutRequest } from "~/redux/auth/actions";
 import { toast } from "react-toastify";
 import { resetUserState } from "~/redux/user/actions";
-import { routesUser } from "~/configs";
+import { routesAdmin, routesUser } from "~/configs";
 
 export const HeaderAdmin = memo(() => {
   const history = useHistory();
@@ -61,7 +61,9 @@ export const HeaderAdmin = memo(() => {
 
           <Dropdown.Menu style={{ zIndex: "6" }}>
             {profileResponse?.data?.role === "admin" && (
-              <Dropdown.Item href="/admin">System management</Dropdown.Item>
+              <Dropdown.Item onClick={() => history.push(routesAdmin.admin)}>
+                <div>System management</div>
+              </Dropdown.Item>
             )}
             <Dropdown.Item onClick={handleWorkSchedule}>
               Work schedule

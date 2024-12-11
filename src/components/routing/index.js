@@ -18,20 +18,8 @@ export const Routing = () => (
     {routerUser.map(({ id, path, component }) => (
       <UserLayout key={id} path={path} component={component} exact />
     ))}
-    {/* {routerAdmin.map(({ id, path, component }) => (
+    {routerAdmin.map(({ id, path, component }) => (
       <AdminLayout key={id} path={path} component={component} exact />
-    ))} */}
-    {routerAdmin.map(({ id, path, component: Component }) => (
-      <Route
-        key={id}
-        path={path}
-        exact
-        render={(props) => (
-          <AdminLayout>
-            <Component {...props} />
-          </AdminLayout>
-        )}
-      />
     ))}
     <Route path="*" component={NotFoundPage} exact />
   </Switch>

@@ -12,7 +12,7 @@ import logo from "~/assets/logo/no-avatar.png";
 import logoTour from "~/assets/logo/logo-tour.png";
 import { CSPhoneOutline } from "~/components/iconography/Outline";
 import { CSUserAddSolid } from "~/components/iconography/Solid";
-import { routesAuth, routesUser } from "~/configs";
+import { routesAdmin, routesAuth, routesUser } from "~/configs";
 import { logoutRequest } from "~/redux/auth/actions";
 import { resetUserState } from "~/redux/user/actions";
 import { getAllCategoryRequest } from "~/redux/categoryBlog/actions";
@@ -115,8 +115,10 @@ export const HeaderAction = memo(() => {
 
                 <Dropdown.Menu style={{ zIndex: "6" }}>
                   {profileResponse?.data?.role === "admin" && (
-                    <Dropdown.Item href="/admin">
-                      System management
+                    <Dropdown.Item>
+                      <div onClick={() => history.push(routesAdmin.admin)}>
+                        System management
+                      </div>
                     </Dropdown.Item>
                   )}
                   <Dropdown.Item onClick={handleWorkSchedule}>
