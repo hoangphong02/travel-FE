@@ -1,9 +1,9 @@
-import { applyMiddleware, compose, createStore } from 'redux';
-import createDebounce from 'redux-debounced';
-import createSagaMiddleware from 'redux-saga';
+import { applyMiddleware, compose, createStore } from "redux";
+import createDebounce from "redux-debounced";
+import createSagaMiddleware from "redux-saga";
 
-import rootReducer from '../rootReducer';
-import rootSaga from '../rootSaga';
+import rootReducer from "../rootReducer";
+import rootSaga from "../rootSaga";
 
 // create the saga middleware
 const sagaMiddleware = createSagaMiddleware();

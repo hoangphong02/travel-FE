@@ -1,156 +1,156 @@
-import React, { memo } from 'react';
+import React, { memo } from "react";
 
-import { ReactComponent as AddTag } from '~/assets/images/iconography/Outline/AddTag.svg';
-import { ReactComponent as Adjustments } from '~/assets/images/iconography/Outline/Adjustments.svg';
-import { ReactComponent as Archive } from '~/assets/images/iconography/Outline/Archive.svg';
-import { ReactComponent as Backspace } from '~/assets/images/iconography/Outline/Backspace.svg';
-import { ReactComponent as BarChart } from '~/assets/images/iconography/Outline/BarChart.svg';
-import { ReactComponent as Bell } from '~/assets/images/iconography/Outline/Bell.svg';
-import { ReactComponent as Bill } from '~/assets/images/iconography/Outline/Bill.svg';
-import { ReactComponent as Bookmark } from '~/assets/images/iconography/Outline/Bookmark.svg';
-import { ReactComponent as BookOpen } from '~/assets/images/iconography/Outline/BookOpen.svg';
-import { ReactComponent as Briefcase } from '~/assets/images/iconography/Outline/Briefcase.svg';
-import { ReactComponent as Building } from '~/assets/images/iconography/Outline/Building.svg';
-import { ReactComponent as Button } from '~/assets/images/iconography/Outline/Button.svg';
-import { ReactComponent as Calendar } from '~/assets/images/iconography/Outline/Calendar.svg';
-import { ReactComponent as Camera } from '~/assets/images/iconography/Outline/Camera.svg';
-import { ReactComponent as Cards } from '~/assets/images/iconography/Outline/Cards.svg';
-import { ReactComponent as Cash } from '~/assets/images/iconography/Outline/Cash.svg';
-import { ReactComponent as Chat } from '~/assets/images/iconography/Outline/Chat.svg';
-import { ReactComponent as Check } from '~/assets/images/iconography/Outline/Check.svg';
-import { ReactComponent as Checkbox } from '~/assets/images/iconography/Outline/Checkbox.svg';
-import { ReactComponent as CheckCircle } from '~/assets/images/iconography/Outline/CheckCircle.svg';
-import { ReactComponent as Clock } from '~/assets/images/iconography/Outline/Clock.svg';
-import { ReactComponent as Coupon } from '~/assets/images/iconography/Outline/Coupon.svg';
-import { ReactComponent as CovidDocument } from '~/assets/images/iconography/Outline/CovidDocument.svg';
-import { ReactComponent as Cube } from '~/assets/images/iconography/Outline/Cube.svg';
-import { ReactComponent as DocSettings } from '~/assets/images/iconography/Outline/DocSettings.svg';
-import { ReactComponent as DocumentAdd } from '~/assets/images/iconography/Outline/DocumentAdd.svg';
-import { ReactComponent as DocumentText } from '~/assets/images/iconography/Outline/DocumentText.svg';
-import { ReactComponent as Dollar } from '~/assets/images/iconography/Outline/Dollar.svg';
-import { ReactComponent as DoubleChevron } from '~/assets/images/iconography/Outline/DoubleChevron.svg';
-import { ReactComponent as Download } from '~/assets/images/iconography/Outline/Download.svg';
-import { ReactComponent as Dropdown } from '~/assets/images/iconography/Outline/Dropdown.svg';
-import { ReactComponent as Duplicate } from '~/assets/images/iconography/Outline/Duplicate.svg';
-import { ReactComponent as Edit } from '~/assets/images/iconography/Outline/Edit.svg';
-import { ReactComponent as EmojiHappy } from '~/assets/images/iconography/Outline/EmojiHappy.svg';
-import { ReactComponent as ExternalLink } from '~/assets/images/iconography/Outline/ExternalLink.svg';
-import { ReactComponent as Eye } from '~/assets/images/iconography/Outline/Eye.svg';
-import { ReactComponent as EyeOff } from '~/assets/images/iconography/Outline/EyeOff.svg';
-import { ReactComponent as Flag } from '~/assets/images/iconography/Outline/Flag.svg';
-import { ReactComponent as Folder } from '~/assets/images/iconography/Outline/Folder.svg';
-import { ReactComponent as FolderOpen } from '~/assets/images/iconography/Outline/FolderOpen.svg';
-import { ReactComponent as Form } from '~/assets/images/iconography/Outline/Form.svg';
-import { ReactComponent as FullSize } from '~/assets/images/iconography/Outline/FullSize.svg';
-import { ReactComponent as Globe } from '~/assets/images/iconography/Outline/Globe.svg';
-import { ReactComponent as GlobeAlt } from '~/assets/images/iconography/Outline/GlobeAlt.svg';
-import { ReactComponent as Grid } from '~/assets/images/iconography/Outline/Grid.svg';
-import { ReactComponent as Hand } from '~/assets/images/iconography/Outline/Hand.svg';
-import { ReactComponent as Heart } from '~/assets/images/iconography/Outline/Heart.svg';
-import { ReactComponent as Home } from '~/assets/images/iconography/Outline/Home.svg';
-import { ReactComponent as IconPuzzle } from '~/assets/images/iconography/Outline/IconPuzzle.svg';
-import { ReactComponent as Inbox } from '~/assets/images/iconography/Outline/Inbox.svg';
-import { ReactComponent as Info } from '~/assets/images/iconography/Outline/Info.svg';
-import { ReactComponent as InfoCircle } from '~/assets/images/iconography/Outline/InfoCircle.svg';
-import { ReactComponent as InputForm } from '~/assets/images/iconography/Outline/InputForm.svg';
-import { ReactComponent as Key } from '~/assets/images/iconography/Outline/Key.svg';
-import { ReactComponent as LargeGrid } from '~/assets/images/iconography/Outline/LargeGrid.svg';
-import { ReactComponent as LargeList } from '~/assets/images/iconography/Outline/LargeList.svg';
-import { ReactComponent as Layer } from '~/assets/images/iconography/Outline/Layer.svg';
-import { ReactComponent as LightningBolt } from '~/assets/images/iconography/Outline/LightningBolt.svg';
-import { ReactComponent as LineChart } from '~/assets/images/iconography/Outline/LineChart.svg';
-import { ReactComponent as Linked } from '~/assets/images/iconography/Outline/Linked.svg';
-import { ReactComponent as List } from '~/assets/images/iconography/Outline/List.svg';
-import { ReactComponent as LocationMarker } from '~/assets/images/iconography/Outline/LocationMarker.svg';
-import { ReactComponent as LockClosed } from '~/assets/images/iconography/Outline/LockClosed.svg';
-import { ReactComponent as LockOpen } from '~/assets/images/iconography/Outline/LockOpen.svg';
-import { ReactComponent as Logout } from '~/assets/images/iconography/Outline/Logout.svg';
-import { ReactComponent as Mail } from '~/assets/images/iconography/Outline/Mail.svg';
-import { ReactComponent as MailOpen } from '~/assets/images/iconography/Outline/MailOpen.svg';
-import { ReactComponent as Map } from '~/assets/images/iconography/Outline/Map.svg';
-import { ReactComponent as Microphone } from '~/assets/images/iconography/Outline/Microphone.svg';
-import { ReactComponent as MinusCircle } from '~/assets/images/iconography/Outline/MinusCircle.svg';
-import { ReactComponent as Modal } from '~/assets/images/iconography/Outline/Modal.svg';
-import { ReactComponent as MoreHorizontal } from '~/assets/images/iconography/Outline/MoreHorizontal.svg';
-import { ReactComponent as MoreVertical } from '~/assets/images/iconography/Outline/MoreVertical.svg';
-import { ReactComponent as Navigational } from '~/assets/images/iconography/Outline/Navigational.svg';
-import { ReactComponent as Newspaper } from '~/assets/images/iconography/Outline/Newspaper.svg';
-import { ReactComponent as OfficeBuilding } from '~/assets/images/iconography/Outline/OfficeBuilding.svg';
-import { ReactComponent as Pagination } from '~/assets/images/iconography/Outline/Pagination.svg';
-import { ReactComponent as PaperAirplane } from '~/assets/images/iconography/Outline/PaperAirplane.svg';
-import { ReactComponent as PencilAlt } from '~/assets/images/iconography/Outline/PencilAlt.svg';
-import { ReactComponent as Phone } from '~/assets/images/iconography/Outline/Phone.svg';
-import { ReactComponent as Photograph } from '~/assets/images/iconography/Outline/Photograph.svg';
-import { ReactComponent as PieChart } from '~/assets/images/iconography/Outline/PieChart.svg';
-import { ReactComponent as Police } from '~/assets/images/iconography/Outline/Police.svg';
-import { ReactComponent as Printer } from '~/assets/images/iconography/Outline/Printer.svg';
-import { ReactComponent as Progress } from '~/assets/images/iconography/Outline/Progress.svg';
-import { ReactComponent as QuestionLined } from '~/assets/images/iconography/Outline/QuestionLined.svg';
-import { ReactComponent as Radio } from '~/assets/images/iconography/Outline/Radio.svg';
-import { ReactComponent as Refresh } from '~/assets/images/iconography/Outline/Refresh.svg';
-import { ReactComponent as Request } from '~/assets/images/iconography/Outline/Request.svg';
-import { ReactComponent as Search } from '~/assets/images/iconography/Outline/Search.svg';
-import { ReactComponent as Selector } from '~/assets/images/iconography/Outline/Selector.svg';
-import { ReactComponent as Send } from '~/assets/images/iconography/Outline/Send.svg';
-import { ReactComponent as Setting } from '~/assets/images/iconography/Outline/Setting.svg';
-import { ReactComponent as Share } from '~/assets/images/iconography/Outline/Share.svg';
-import { ReactComponent as ShieldCheck } from '~/assets/images/iconography/Outline/ShieldCheck.svg';
-import { ReactComponent as ShoppingBag } from '~/assets/images/iconography/Outline/ShoppingBag.svg';
-import { ReactComponent as Stepper } from '~/assets/images/iconography/Outline/Stepper.svg';
-import { ReactComponent as Submit } from '~/assets/images/iconography/Outline/Submit.svg';
-import { ReactComponent as Table } from '~/assets/images/iconography/Outline/Table.svg';
-import { ReactComponent as Tag } from '~/assets/images/iconography/Outline/Tag.svg';
-import { ReactComponent as Template } from '~/assets/images/iconography/Outline/Template.svg';
-import { ReactComponent as Toggle } from '~/assets/images/iconography/Outline/Toggle.svg';
-import { ReactComponent as Trash } from '~/assets/images/iconography/Outline/Trash.svg';
-import { ReactComponent as Truck } from '~/assets/images/iconography/Outline/Truck.svg';
-import { ReactComponent as Undo } from '~/assets/images/iconography/Outline/Undo.svg';
-import { ReactComponent as Unlinked } from '~/assets/images/iconography/Outline/Unlinked.svg';
-import { ReactComponent as Upload } from '~/assets/images/iconography/Outline/Upload.svg';
-import { ReactComponent as UploadPicture } from '~/assets/images/iconography/Outline/UploadPicture.svg';
-import { ReactComponent as User } from '~/assets/images/iconography/Outline/User.svg';
-import { ReactComponent as UserAdd } from '~/assets/images/iconography/Outline/UserAdd.svg';
-import { ReactComponent as UserCircle } from '~/assets/images/iconography/Outline/UserCircle.svg';
-import { ReactComponent as UserGroup } from '~/assets/images/iconography/Outline/UserGroup.svg';
-import { ReactComponent as UserRemove } from '~/assets/images/iconography/Outline/UserRemove.svg';
-import { ReactComponent as Users } from '~/assets/images/iconography/Outline/Users.svg';
-import { ReactComponent as Vaccine } from '~/assets/images/iconography/Outline/Vaccine.svg';
-import { ReactComponent as Airplane } from '~/assets/images/iconography/Outline/Airplane.svg';
-import { ReactComponent as Basket } from '~/assets/images/iconography/Outline/Basket.svg';
-import { ReactComponent as Calendar2 } from '~/assets/images/iconography/Outline/Calendar2.svg';
-import { ReactComponent as Coin } from '~/assets/images/iconography/Outline/Coin.svg';
-import { ReactComponent as Coins } from '~/assets/images/iconography/Outline/Coins.svg';
-import { ReactComponent as Copy } from '~/assets/images/iconography/Outline/Copy.svg';
-import { ReactComponent as Customization } from '~/assets/images/iconography/Outline/Customization.svg';
-import { ReactComponent as Favorites } from '~/assets/images/iconography/Outline/Favorites.svg';
-import { ReactComponent as Feed } from '~/assets/images/iconography/Outline/Feed.svg';
-import { ReactComponent as Filter } from '~/assets/images/iconography/Outline/Filter.svg';
-import { ReactComponent as Home2 } from '~/assets/images/iconography/Outline/Home2.svg';
-import { ReactComponent as Load } from '~/assets/images/iconography/Outline/Load.svg';
-import { ReactComponent as Location } from '~/assets/images/iconography/Outline/Location.svg';
-import { ReactComponent as MailBox } from '~/assets/images/iconography/Outline/MailBox.svg';
-import { ReactComponent as Map2 } from '~/assets/images/iconography/Outline/Map2.svg';
-import { ReactComponent as Money } from '~/assets/images/iconography/Outline/Money.svg';
-import { ReactComponent as Moon } from '~/assets/images/iconography/Outline/Moon.svg';
-import { ReactComponent as Notifications } from '~/assets/images/iconography/Outline/Notifications.svg';
-import { ReactComponent as Pencil } from '~/assets/images/iconography/Outline/Pencil.svg';
-import { ReactComponent as Pipette } from '~/assets/images/iconography/Outline/Pipette.svg';
-import { ReactComponent as Print } from '~/assets/images/iconography/Outline/Print.svg';
-import { ReactComponent as Receipt } from '~/assets/images/iconography/Outline/Receipt.svg';
-import { ReactComponent as ShoppingBag2 } from '~/assets/images/iconography/Outline/ShoppingBag2.svg';
-import { ReactComponent as Store } from '~/assets/images/iconography/Outline/Store.svg';
-import { ReactComponent as Sun } from '~/assets/images/iconography/Outline/Sun.svg';
-import { ReactComponent as Time } from '~/assets/images/iconography/Outline/Time.svg';
-import { ReactComponent as Trash2 } from '~/assets/images/iconography/Outline/Trash2.svg';
-import { ReactComponent as User2 } from '~/assets/images/iconography/Outline/User2.svg';
-import { ReactComponent as Wallet } from '~/assets/images/iconography/Outline/Wallet.svg';
-import { ReactComponent as Order } from '~/assets/images/iconography/Outline/Order.svg';
-import { ReactComponent as Call } from '~/assets/images/iconography/Outline/Call.svg';
-import { ReactComponent as Pen } from '~/assets/images/iconography/Outline/Pen.svg';
-import { ReactComponent as Upload2 } from '~/assets/images/iconography/Outline/Upload2.svg';
-import { ReactComponent as Qrcode } from '~/assets/images/iconography/Outline/Qrcode.svg';
+import { ReactComponent as AddTag } from "~/assets/images/iconography/Outline/AddTag.svg";
+import { ReactComponent as Adjustments } from "~/assets/images/iconography/Outline/Adjustments.svg";
+import { ReactComponent as Archive } from "~/assets/images/iconography/Outline/Archive.svg";
+import { ReactComponent as Backspace } from "~/assets/images/iconography/Outline/Backspace.svg";
+import { ReactComponent as BarChart } from "~/assets/images/iconography/Outline/BarChart.svg";
+import { ReactComponent as Bell } from "~/assets/images/iconography/Outline/Bell.svg";
+import { ReactComponent as Bill } from "~/assets/images/iconography/Outline/Bill.svg";
+import { ReactComponent as Bookmark } from "~/assets/images/iconography/Outline/Bookmark.svg";
+import { ReactComponent as BookOpen } from "~/assets/images/iconography/Outline/BookOpen.svg";
+import { ReactComponent as Briefcase } from "~/assets/images/iconography/Outline/Briefcase.svg";
+import { ReactComponent as Building } from "~/assets/images/iconography/Outline/Building.svg";
+import { ReactComponent as Button } from "~/assets/images/iconography/Outline/Button.svg";
+import { ReactComponent as Calendar } from "~/assets/images/iconography/Outline/Calendar.svg";
+import { ReactComponent as Camera } from "~/assets/images/iconography/Outline/Camera.svg";
+import { ReactComponent as Cards } from "~/assets/images/iconography/Outline/Cards.svg";
+import { ReactComponent as Cash } from "~/assets/images/iconography/Outline/Cash.svg";
+import { ReactComponent as Chat } from "~/assets/images/iconography/Outline/Chat.svg";
+import { ReactComponent as Check } from "~/assets/images/iconography/Outline/Check.svg";
+import { ReactComponent as Checkbox } from "~/assets/images/iconography/Outline/Checkbox.svg";
+import { ReactComponent as CheckCircle } from "~/assets/images/iconography/Outline/CheckCircle.svg";
+import { ReactComponent as Clock } from "~/assets/images/iconography/Outline/Clock.svg";
+import { ReactComponent as Coupon } from "~/assets/images/iconography/Outline/Coupon.svg";
+import { ReactComponent as CovidDocument } from "~/assets/images/iconography/Outline/CovidDocument.svg";
+import { ReactComponent as Cube } from "~/assets/images/iconography/Outline/Cube.svg";
+import { ReactComponent as DocSettings } from "~/assets/images/iconography/Outline/DocSettings.svg";
+import { ReactComponent as DocumentAdd } from "~/assets/images/iconography/Outline/DocumentAdd.svg";
+import { ReactComponent as DocumentText } from "~/assets/images/iconography/Outline/DocumentText.svg";
+import { ReactComponent as Dollar } from "~/assets/images/iconography/Outline/Dollar.svg";
+import { ReactComponent as DoubleChevron } from "~/assets/images/iconography/Outline/DoubleChevron.svg";
+import { ReactComponent as Download } from "~/assets/images/iconography/Outline/Download.svg";
+import { ReactComponent as Dropdown } from "~/assets/images/iconography/Outline/Dropdown.svg";
+import { ReactComponent as Duplicate } from "~/assets/images/iconography/Outline/Duplicate.svg";
+import { ReactComponent as Edit } from "~/assets/images/iconography/Outline/Edit.svg";
+import { ReactComponent as EmojiHappy } from "~/assets/images/iconography/Outline/EmojiHappy.svg";
+import { ReactComponent as ExternalLink } from "~/assets/images/iconography/Outline/ExternalLink.svg";
+import { ReactComponent as Eye } from "~/assets/images/iconography/Outline/Eye.svg";
+import { ReactComponent as EyeOff } from "~/assets/images/iconography/Outline/EyeOff.svg";
+import { ReactComponent as Flag } from "~/assets/images/iconography/Outline/Flag.svg";
+import { ReactComponent as Folder } from "~/assets/images/iconography/Outline/Folder.svg";
+import { ReactComponent as FolderOpen } from "~/assets/images/iconography/Outline/FolderOpen.svg";
+import { ReactComponent as Form } from "~/assets/images/iconography/Outline/Form.svg";
+import { ReactComponent as FullSize } from "~/assets/images/iconography/Outline/FullSize.svg";
+import { ReactComponent as Globe } from "~/assets/images/iconography/Outline/Globe.svg";
+import { ReactComponent as GlobeAlt } from "~/assets/images/iconography/Outline/GlobeAlt.svg";
+import { ReactComponent as Grid } from "~/assets/images/iconography/Outline/Grid.svg";
+import { ReactComponent as Hand } from "~/assets/images/iconography/Outline/Hand.svg";
+import { ReactComponent as Heart } from "~/assets/images/iconography/Outline/Heart.svg";
+import { ReactComponent as Home } from "~/assets/images/iconography/Outline/Home.svg";
+import { ReactComponent as IconPuzzle } from "~/assets/images/iconography/Outline/IconPuzzle.svg";
+import { ReactComponent as Inbox } from "~/assets/images/iconography/Outline/Inbox.svg";
+import { ReactComponent as Info } from "~/assets/images/iconography/Outline/Info.svg";
+import { ReactComponent as InfoCircle } from "~/assets/images/iconography/Outline/InfoCircle.svg";
+import { ReactComponent as InputForm } from "~/assets/images/iconography/Outline/InputForm.svg";
+import { ReactComponent as Key } from "~/assets/images/iconography/Outline/Key.svg";
+import { ReactComponent as LargeGrid } from "~/assets/images/iconography/Outline/LargeGrid.svg";
+import { ReactComponent as LargeList } from "~/assets/images/iconography/Outline/LargeList.svg";
+import { ReactComponent as Layer } from "~/assets/images/iconography/Outline/Layer.svg";
+import { ReactComponent as LightningBolt } from "~/assets/images/iconography/Outline/LightningBolt.svg";
+import { ReactComponent as LineChart } from "~/assets/images/iconography/Outline/LineChart.svg";
+import { ReactComponent as Linked } from "~/assets/images/iconography/Outline/Linked.svg";
+import { ReactComponent as List } from "~/assets/images/iconography/Outline/List.svg";
+import { ReactComponent as LocationMarker } from "~/assets/images/iconography/Outline/LocationMarker.svg";
+import { ReactComponent as LockClosed } from "~/assets/images/iconography/Outline/LockClosed.svg";
+import { ReactComponent as LockOpen } from "~/assets/images/iconography/Outline/LockOpen.svg";
+import { ReactComponent as Logout } from "~/assets/images/iconography/Outline/Logout.svg";
+import { ReactComponent as Mail } from "~/assets/images/iconography/Outline/Mail.svg";
+import { ReactComponent as MailOpen } from "~/assets/images/iconography/Outline/MailOpen.svg";
+import { ReactComponent as Map } from "~/assets/images/iconography/Outline/Map.svg";
+import { ReactComponent as Microphone } from "~/assets/images/iconography/Outline/Microphone.svg";
+import { ReactComponent as MinusCircle } from "~/assets/images/iconography/Outline/MinusCircle.svg";
+import { ReactComponent as Modal } from "~/assets/images/iconography/Outline/Modal.svg";
+import { ReactComponent as MoreHorizontal } from "~/assets/images/iconography/Outline/MoreHorizontal.svg";
+import { ReactComponent as MoreVertical } from "~/assets/images/iconography/Outline/MoreVertical.svg";
+import { ReactComponent as Navigational } from "~/assets/images/iconography/Outline/Navigational.svg";
+import { ReactComponent as Newspaper } from "~/assets/images/iconography/Outline/Newspaper.svg";
+import { ReactComponent as OfficeBuilding } from "~/assets/images/iconography/Outline/OfficeBuilding.svg";
+import { ReactComponent as Pagination } from "~/assets/images/iconography/Outline/Pagination.svg";
+import { ReactComponent as PaperAirplane } from "~/assets/images/iconography/Outline/PaperAirplane.svg";
+import { ReactComponent as PencilAlt } from "~/assets/images/iconography/Outline/PencilAlt.svg";
+import { ReactComponent as Phone } from "~/assets/images/iconography/Outline/Phone.svg";
+import { ReactComponent as Photograph } from "~/assets/images/iconography/Outline/Photograph.svg";
+import { ReactComponent as PieChart } from "~/assets/images/iconography/Outline/PieChart.svg";
+import { ReactComponent as Police } from "~/assets/images/iconography/Outline/Police.svg";
+import { ReactComponent as Printer } from "~/assets/images/iconography/Outline/Printer.svg";
+import { ReactComponent as Progress } from "~/assets/images/iconography/Outline/Progress.svg";
+import { ReactComponent as QuestionLined } from "~/assets/images/iconography/Outline/QuestionLined.svg";
+import { ReactComponent as Radio } from "~/assets/images/iconography/Outline/Radio.svg";
+import { ReactComponent as Refresh } from "~/assets/images/iconography/Outline/Refresh.svg";
+import { ReactComponent as Request } from "~/assets/images/iconography/Outline/Request.svg";
+import { ReactComponent as Search } from "~/assets/images/iconography/Outline/Search.svg";
+import { ReactComponent as Selector } from "~/assets/images/iconography/Outline/Selector.svg";
+import { ReactComponent as Send } from "~/assets/images/iconography/Outline/Send.svg";
+import { ReactComponent as Setting } from "~/assets/images/iconography/Outline/Setting.svg";
+import { ReactComponent as Share } from "~/assets/images/iconography/Outline/Share.svg";
+import { ReactComponent as ShieldCheck } from "~/assets/images/iconography/Outline/ShieldCheck.svg";
+import { ReactComponent as ShoppingBag } from "~/assets/images/iconography/Outline/ShoppingBag.svg";
+import { ReactComponent as Stepper } from "~/assets/images/iconography/Outline/Stepper.svg";
+import { ReactComponent as Submit } from "~/assets/images/iconography/Outline/Submit.svg";
+import { ReactComponent as Table } from "~/assets/images/iconography/Outline/Table.svg";
+import { ReactComponent as Tag } from "~/assets/images/iconography/Outline/Tag.svg";
+import { ReactComponent as Template } from "~/assets/images/iconography/Outline/Template.svg";
+import { ReactComponent as Toggle } from "~/assets/images/iconography/Outline/Toggle.svg";
+import { ReactComponent as Trash } from "~/assets/images/iconography/Outline/Trash.svg";
+import { ReactComponent as Truck } from "~/assets/images/iconography/Outline/Truck.svg";
+import { ReactComponent as Undo } from "~/assets/images/iconography/Outline/Undo.svg";
+import { ReactComponent as Unlinked } from "~/assets/images/iconography/Outline/Unlinked.svg";
+import { ReactComponent as Upload } from "~/assets/images/iconography/Outline/Upload.svg";
+import { ReactComponent as UploadPicture } from "~/assets/images/iconography/Outline/UploadPicture.svg";
+import { ReactComponent as User } from "~/assets/images/iconography/Outline/User.svg";
+import { ReactComponent as UserAdd } from "~/assets/images/iconography/Outline/UserAdd.svg";
+import { ReactComponent as UserCircle } from "~/assets/images/iconography/Outline/UserCircle.svg";
+import { ReactComponent as UserGroup } from "~/assets/images/iconography/Outline/UserGroup.svg";
+import { ReactComponent as UserRemove } from "~/assets/images/iconography/Outline/UserRemove.svg";
+import { ReactComponent as Users } from "~/assets/images/iconography/Outline/Users.svg";
+import { ReactComponent as Vaccine } from "~/assets/images/iconography/Outline/Vaccine.svg";
+import { ReactComponent as Airplane } from "~/assets/images/iconography/Outline/Airplane.svg";
+import { ReactComponent as Basket } from "~/assets/images/iconography/Outline/Basket.svg";
+import { ReactComponent as Calendar2 } from "~/assets/images/iconography/Outline/Calendar2.svg";
+import { ReactComponent as Coin } from "~/assets/images/iconography/Outline/Coin.svg";
+import { ReactComponent as Coins } from "~/assets/images/iconography/Outline/Coins.svg";
+import { ReactComponent as Copy } from "~/assets/images/iconography/Outline/Copy.svg";
+import { ReactComponent as Customization } from "~/assets/images/iconography/Outline/Customization.svg";
+import { ReactComponent as Favorites } from "~/assets/images/iconography/Outline/Favorites.svg";
+import { ReactComponent as Feed } from "~/assets/images/iconography/Outline/Feed.svg";
+import { ReactComponent as Filter } from "~/assets/images/iconography/Outline/Filter.svg";
+import { ReactComponent as Home2 } from "~/assets/images/iconography/Outline/Home2.svg";
+import { ReactComponent as Load } from "~/assets/images/iconography/Outline/Load.svg";
+import { ReactComponent as Location } from "~/assets/images/iconography/Outline/Location.svg";
+import { ReactComponent as MailBox } from "~/assets/images/iconography/Outline/MailBox.svg";
+import { ReactComponent as Map2 } from "~/assets/images/iconography/Outline/Map2.svg";
+import { ReactComponent as Money } from "~/assets/images/iconography/Outline/Money.svg";
+import { ReactComponent as Moon } from "~/assets/images/iconography/Outline/Moon.svg";
+import { ReactComponent as Notifications } from "~/assets/images/iconography/Outline/Notifications.svg";
+import { ReactComponent as Pencil } from "~/assets/images/iconography/Outline/Pencil.svg";
+import { ReactComponent as Pipette } from "~/assets/images/iconography/Outline/Pipette.svg";
+import { ReactComponent as Print } from "~/assets/images/iconography/Outline/Print.svg";
+import { ReactComponent as Receipt } from "~/assets/images/iconography/Outline/Receipt.svg";
+import { ReactComponent as ShoppingBag2 } from "~/assets/images/iconography/Outline/ShoppingBag2.svg";
+import { ReactComponent as Store } from "~/assets/images/iconography/Outline/Store.svg";
+import { ReactComponent as Sun } from "~/assets/images/iconography/Outline/Sun.svg";
+import { ReactComponent as Time } from "~/assets/images/iconography/Outline/Time.svg";
+import { ReactComponent as Trash2 } from "~/assets/images/iconography/Outline/Trash2.svg";
+import { ReactComponent as User2 } from "~/assets/images/iconography/Outline/User2.svg";
+import { ReactComponent as Wallet } from "~/assets/images/iconography/Outline/Wallet.svg";
+import { ReactComponent as Order } from "~/assets/images/iconography/Outline/Order.svg";
+import { ReactComponent as Call } from "~/assets/images/iconography/Outline/Call.svg";
+import { ReactComponent as Pen } from "~/assets/images/iconography/Outline/Pen.svg";
+import { ReactComponent as Upload2 } from "~/assets/images/iconography/Outline/Upload2.svg";
+import { ReactComponent as Qrcode } from "~/assets/images/iconography/Outline/Qrcode.svg";
 export const CSUpload2Outline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Upload2
       className={className}
       style={style}
@@ -159,10 +159,10 @@ export const CSUpload2Outline = memo(
   ),
 );
 
-CSUpload2Outline.displayName = 'CSUpload2Outline';
+CSUpload2Outline.displayName = "CSUpload2Outline";
 
 export const CSPenOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Pen
       className={className}
       style={style}
@@ -171,10 +171,10 @@ export const CSPenOutline = memo(
   ),
 );
 
-CSPenOutline.displayName = 'CSPenOutline';
+CSPenOutline.displayName = "CSPenOutline";
 
 export const CSCallOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Call
       className={className}
       style={style}
@@ -183,10 +183,10 @@ export const CSCallOutline = memo(
   ),
 );
 
-CSCallOutline.displayName = 'CSCallOutline';
+CSCallOutline.displayName = "CSCallOutline";
 
 export const CSOrderOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Order
       className={className}
       style={style}
@@ -195,10 +195,10 @@ export const CSOrderOutline = memo(
   ),
 );
 
-CSOrderOutline.displayName = 'CSOrderOutline';
+CSOrderOutline.displayName = "CSOrderOutline";
 
 export const CSAirplaneOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Airplane
       className={className}
       style={style}
@@ -207,10 +207,10 @@ export const CSAirplaneOutline = memo(
   ),
 );
 
-CSAirplaneOutline.displayName = 'CSAirplaneOutline';
+CSAirplaneOutline.displayName = "CSAirplaneOutline";
 
 export const CSBasketOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Basket
       className={className}
       style={style}
@@ -219,10 +219,10 @@ export const CSBasketOutline = memo(
   ),
 );
 
-CSBasketOutline.displayName = 'CSBasketOutline';
+CSBasketOutline.displayName = "CSBasketOutline";
 
 export const CSCalendar2Outline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Calendar2
       className={className}
       style={style}
@@ -231,10 +231,10 @@ export const CSCalendar2Outline = memo(
   ),
 );
 
-CSCalendar2Outline.displayName = 'CSCalendar2Outline';
+CSCalendar2Outline.displayName = "CSCalendar2Outline";
 
 export const CSCoinOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Coin
       className={className}
       style={style}
@@ -243,10 +243,10 @@ export const CSCoinOutline = memo(
   ),
 );
 
-CSCoinOutline.displayName = 'CSCoinOutline';
+CSCoinOutline.displayName = "CSCoinOutline";
 
 export const CSCoinsOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Coins
       className={className}
       style={style}
@@ -255,10 +255,10 @@ export const CSCoinsOutline = memo(
   ),
 );
 
-CSCoinsOutline.displayName = 'CSCoinsOutline';
+CSCoinsOutline.displayName = "CSCoinsOutline";
 
 export const CSCopyOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Copy
       className={className}
       style={style}
@@ -267,10 +267,10 @@ export const CSCopyOutline = memo(
   ),
 );
 
-CSCopyOutline.displayName = 'CSCopyOutline';
+CSCopyOutline.displayName = "CSCopyOutline";
 
 export const CSCustomizationOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Customization
       className={className}
       style={style}
@@ -279,10 +279,10 @@ export const CSCustomizationOutline = memo(
   ),
 );
 
-CSCustomizationOutline.displayName = 'CSCustomizationOutline';
+CSCustomizationOutline.displayName = "CSCustomizationOutline";
 
 export const CSFavoritesOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Favorites
       className={className}
       style={style}
@@ -291,10 +291,10 @@ export const CSFavoritesOutline = memo(
   ),
 );
 
-CSFavoritesOutline.displayName = 'CSFavoritesOutline';
+CSFavoritesOutline.displayName = "CSFavoritesOutline";
 
 export const CSFeedOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Feed
       className={className}
       style={style}
@@ -303,10 +303,10 @@ export const CSFeedOutline = memo(
   ),
 );
 
-CSFeedOutline.displayName = 'CSFeedOutline';
+CSFeedOutline.displayName = "CSFeedOutline";
 
 export const CSFilterOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Filter
       className={className}
       style={style}
@@ -315,10 +315,10 @@ export const CSFilterOutline = memo(
   ),
 );
 
-CSFilterOutline.displayName = 'CSFilterOutline';
+CSFilterOutline.displayName = "CSFilterOutline";
 
 export const CSHome2Outline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Home2
       className={className}
       style={style}
@@ -327,10 +327,10 @@ export const CSHome2Outline = memo(
   ),
 );
 
-CSHome2Outline.displayName = 'CSHome2Outline';
+CSHome2Outline.displayName = "CSHome2Outline";
 
 export const CSLoadOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Load
       className={className}
       style={style}
@@ -339,10 +339,10 @@ export const CSLoadOutline = memo(
   ),
 );
 
-CSLoadOutline.displayName = 'CSLoadOutline';
+CSLoadOutline.displayName = "CSLoadOutline";
 
 export const CSLocationOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Location
       className={className}
       style={style}
@@ -351,10 +351,10 @@ export const CSLocationOutline = memo(
   ),
 );
 
-CSLocationOutline.displayName = 'CSLocationOutline';
+CSLocationOutline.displayName = "CSLocationOutline";
 
 export const CSMailBoxOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <MailBox
       className={className}
       style={style}
@@ -363,10 +363,10 @@ export const CSMailBoxOutline = memo(
   ),
 );
 
-CSMailBoxOutline.displayName = 'CSMailBoxOutline';
+CSMailBoxOutline.displayName = "CSMailBoxOutline";
 
 export const CSMap2Outline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Map2
       className={className}
       style={style}
@@ -375,10 +375,10 @@ export const CSMap2Outline = memo(
   ),
 );
 
-CSMap2Outline.displayName = 'CSMap2Outline';
+CSMap2Outline.displayName = "CSMap2Outline";
 
 export const CSMoneyOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Money
       className={className}
       style={style}
@@ -387,10 +387,10 @@ export const CSMoneyOutline = memo(
   ),
 );
 
-CSMoneyOutline.displayName = 'CSMoneyOutline';
+CSMoneyOutline.displayName = "CSMoneyOutline";
 
 export const CSMoonOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Moon
       className={className}
       style={style}
@@ -399,10 +399,10 @@ export const CSMoonOutline = memo(
   ),
 );
 
-CSMoonOutline.displayName = 'CSMoonOutline';
+CSMoonOutline.displayName = "CSMoonOutline";
 
 export const CSNotificationsOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Notifications
       className={className}
       style={style}
@@ -411,10 +411,10 @@ export const CSNotificationsOutline = memo(
   ),
 );
 
-CSNotificationsOutline.displayName = 'CSNotificationsOutline';
+CSNotificationsOutline.displayName = "CSNotificationsOutline";
 
 export const CSPencilOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Pencil
       className={className}
       style={style}
@@ -423,10 +423,10 @@ export const CSPencilOutline = memo(
   ),
 );
 
-CSPencilOutline.displayName = 'CSPencilOutline';
+CSPencilOutline.displayName = "CSPencilOutline";
 
 export const CSPipetteOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Pipette
       className={className}
       style={style}
@@ -435,10 +435,10 @@ export const CSPipetteOutline = memo(
   ),
 );
 
-CSPipetteOutline.displayName = 'CSPipetteOutline';
+CSPipetteOutline.displayName = "CSPipetteOutline";
 
 export const CSPrintOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Print
       className={className}
       style={style}
@@ -447,10 +447,10 @@ export const CSPrintOutline = memo(
   ),
 );
 
-CSPrintOutline.displayName = 'CSPrintOutline';
+CSPrintOutline.displayName = "CSPrintOutline";
 
 export const CSReceiptOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Receipt
       className={className}
       style={style}
@@ -459,10 +459,10 @@ export const CSReceiptOutline = memo(
   ),
 );
 
-CSReceiptOutline.displayName = 'CSReceiptOutline';
+CSReceiptOutline.displayName = "CSReceiptOutline";
 
 export const CSShoppingBag2Outline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ShoppingBag2
       className={className}
       style={style}
@@ -471,10 +471,10 @@ export const CSShoppingBag2Outline = memo(
   ),
 );
 
-CSShoppingBag2Outline.displayName = 'CSShoppingBag2Outline';
+CSShoppingBag2Outline.displayName = "CSShoppingBag2Outline";
 
 export const CSStoreOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Store
       className={className}
       style={style}
@@ -483,10 +483,10 @@ export const CSStoreOutline = memo(
   ),
 );
 
-CSStoreOutline.displayName = 'CSStoreOutline';
+CSStoreOutline.displayName = "CSStoreOutline";
 
 export const CSSunOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Sun
       className={className}
       style={style}
@@ -495,10 +495,10 @@ export const CSSunOutline = memo(
   ),
 );
 
-CSSunOutline.displayName = 'CSSunOutline';
+CSSunOutline.displayName = "CSSunOutline";
 
 export const CSTimeOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Time
       className={className}
       style={style}
@@ -507,10 +507,10 @@ export const CSTimeOutline = memo(
   ),
 );
 
-CSTimeOutline.displayName = 'CSTimeOutline';
+CSTimeOutline.displayName = "CSTimeOutline";
 
 export const CSTrash2Outline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Trash2
       className={className}
       style={style}
@@ -519,10 +519,10 @@ export const CSTrash2Outline = memo(
   ),
 );
 
-CSTrash2Outline.displayName = 'CSTrash2Outline';
+CSTrash2Outline.displayName = "CSTrash2Outline";
 
 export const CSUser2Outline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <User2
       className={className}
       style={style}
@@ -531,10 +531,10 @@ export const CSUser2Outline = memo(
   ),
 );
 
-CSUser2Outline.displayName = 'CSUser2Outline';
+CSUser2Outline.displayName = "CSUser2Outline";
 
 export const CSWalletOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Wallet
       className={className}
       style={style}
@@ -543,10 +543,10 @@ export const CSWalletOutline = memo(
   ),
 );
 
-CSWalletOutline.displayName = 'CSWalletOutline';
+CSWalletOutline.displayName = "CSWalletOutline";
 
 export const CSAddTagOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <AddTag
       className={className}
       style={style}
@@ -555,10 +555,10 @@ export const CSAddTagOutline = memo(
   ),
 );
 
-CSAddTagOutline.displayName = 'CSAddTagOutline';
+CSAddTagOutline.displayName = "CSAddTagOutline";
 
 export const CSAdjustmentsOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Adjustments
       className={className}
       style={style}
@@ -567,10 +567,10 @@ export const CSAdjustmentsOutline = memo(
   ),
 );
 
-CSAdjustmentsOutline.displayName = 'CSAdjustmentsOutline';
+CSAdjustmentsOutline.displayName = "CSAdjustmentsOutline";
 
 export const CSArchiveOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Archive
       className={className}
       style={style}
@@ -579,10 +579,10 @@ export const CSArchiveOutline = memo(
   ),
 );
 
-CSArchiveOutline.displayName = 'CSArchiveOutline';
+CSArchiveOutline.displayName = "CSArchiveOutline";
 
 export const CSBackspaceOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Backspace
       className={className}
       style={style}
@@ -591,10 +591,10 @@ export const CSBackspaceOutline = memo(
   ),
 );
 
-CSBackspaceOutline.displayName = 'CSBackspaceOutline';
+CSBackspaceOutline.displayName = "CSBackspaceOutline";
 
 export const CSBellOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Bell
       className={className}
       style={style}
@@ -603,10 +603,10 @@ export const CSBellOutline = memo(
   ),
 );
 
-CSBellOutline.displayName = 'CSBellOutline';
+CSBellOutline.displayName = "CSBellOutline";
 
 export const CSBillOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Bill
       className={className}
       style={style}
@@ -615,10 +615,10 @@ export const CSBillOutline = memo(
   ),
 );
 
-CSBillOutline.displayName = 'CSBillOutline';
+CSBillOutline.displayName = "CSBillOutline";
 
 export const CSBookmarkOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Bookmark
       className={className}
       style={style}
@@ -627,10 +627,10 @@ export const CSBookmarkOutline = memo(
   ),
 );
 
-CSBookmarkOutline.displayName = 'CSBookmarkOutline';
+CSBookmarkOutline.displayName = "CSBookmarkOutline";
 
 export const CSBookOpenOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <BookOpen
       className={className}
       style={style}
@@ -639,10 +639,10 @@ export const CSBookOpenOutline = memo(
   ),
 );
 
-CSBookOpenOutline.displayName = 'CSBookOpenOutline';
+CSBookOpenOutline.displayName = "CSBookOpenOutline";
 
 export const CSBriefcaseOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Briefcase
       className={className}
       style={style}
@@ -651,10 +651,10 @@ export const CSBriefcaseOutline = memo(
   ),
 );
 
-CSBriefcaseOutline.displayName = 'CSBriefcaseOutline';
+CSBriefcaseOutline.displayName = "CSBriefcaseOutline";
 
 export const CSBuildingOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Building
       className={className}
       style={style}
@@ -663,10 +663,10 @@ export const CSBuildingOutline = memo(
   ),
 );
 
-CSBuildingOutline.displayName = 'CSBuildingOutline';
+CSBuildingOutline.displayName = "CSBuildingOutline";
 
 export const CSButtonOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Button
       className={className}
       style={style}
@@ -675,10 +675,10 @@ export const CSButtonOutline = memo(
   ),
 );
 
-CSButtonOutline.displayName = 'CSButtonOutline';
+CSButtonOutline.displayName = "CSButtonOutline";
 
 export const CSCalendarOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Calendar
       className={className}
       style={style}
@@ -687,10 +687,10 @@ export const CSCalendarOutline = memo(
   ),
 );
 
-CSCalendarOutline.displayName = 'CSCalendarOutline';
+CSCalendarOutline.displayName = "CSCalendarOutline";
 
 export const CSCameraOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Camera
       className={className}
       style={style}
@@ -699,10 +699,10 @@ export const CSCameraOutline = memo(
   ),
 );
 
-CSCameraOutline.displayName = 'CSCameraOutline';
+CSCameraOutline.displayName = "CSCameraOutline";
 
 export const CSCardsOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Cards
       className={className}
       style={style}
@@ -711,10 +711,10 @@ export const CSCardsOutline = memo(
   ),
 );
 
-CSCardsOutline.displayName = 'CSCardsOutline';
+CSCardsOutline.displayName = "CSCardsOutline";
 
 export const CSCashOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Cash
       className={className}
       style={style}
@@ -723,10 +723,10 @@ export const CSCashOutline = memo(
   ),
 );
 
-CSCashOutline.displayName = 'CSCashOutline';
+CSCashOutline.displayName = "CSCashOutline";
 
 export const CSLineChartOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <LineChart
       className={className}
       style={style}
@@ -735,10 +735,10 @@ export const CSLineChartOutline = memo(
   ),
 );
 
-CSLineChartOutline.displayName = 'CSLineChartOutline';
+CSLineChartOutline.displayName = "CSLineChartOutline";
 
 export const CSBarChartOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <BarChart
       className={className}
       style={style}
@@ -747,10 +747,10 @@ export const CSBarChartOutline = memo(
   ),
 );
 
-CSBarChartOutline.displayName = 'CSBarChartOutline';
+CSBarChartOutline.displayName = "CSBarChartOutline";
 
 export const CSChatOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Chat
       className={className}
       style={style}
@@ -759,10 +759,10 @@ export const CSChatOutline = memo(
   ),
 );
 
-CSChatOutline.displayName = 'CSChatOutline';
+CSChatOutline.displayName = "CSChatOutline";
 
 export const CSCheckOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Check
       className={className}
       style={style}
@@ -771,10 +771,10 @@ export const CSCheckOutline = memo(
   ),
 );
 
-CSCheckOutline.displayName = 'CSCheckOutline';
+CSCheckOutline.displayName = "CSCheckOutline";
 
 export const CSCheckboxOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Checkbox
       className={className}
       style={style}
@@ -783,10 +783,10 @@ export const CSCheckboxOutline = memo(
   ),
 );
 
-CSCheckboxOutline.displayName = 'CSCheckboxOutline';
+CSCheckboxOutline.displayName = "CSCheckboxOutline";
 
 export const CSCheckCircleOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <CheckCircle
       className={className}
       style={style}
@@ -795,10 +795,10 @@ export const CSCheckCircleOutline = memo(
   ),
 );
 
-CSCheckCircleOutline.displayName = 'CSCheckCircleOutline';
+CSCheckCircleOutline.displayName = "CSCheckCircleOutline";
 
 export const CSClockOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Clock
       className={className}
       style={style}
@@ -807,10 +807,10 @@ export const CSClockOutline = memo(
   ),
 );
 
-CSClockOutline.displayName = 'CSClockOutline';
+CSClockOutline.displayName = "CSClockOutline";
 
 export const CSCouponOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Coupon
       className={className}
       style={style}
@@ -819,10 +819,10 @@ export const CSCouponOutline = memo(
   ),
 );
 
-CSCouponOutline.displayName = 'CSCouponOutline';
+CSCouponOutline.displayName = "CSCouponOutline";
 
 export const CSCovidDocumentOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <CovidDocument
       className={className}
       style={style}
@@ -831,10 +831,10 @@ export const CSCovidDocumentOutline = memo(
   ),
 );
 
-CSCovidDocumentOutline.displayName = 'CSCovidDocumentOutline';
+CSCovidDocumentOutline.displayName = "CSCovidDocumentOutline";
 
 export const CSCubeOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Cube
       className={className}
       style={style}
@@ -843,10 +843,10 @@ export const CSCubeOutline = memo(
   ),
 );
 
-CSCubeOutline.displayName = 'CSCubeOutline';
+CSCubeOutline.displayName = "CSCubeOutline";
 
 export const CSDollarOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Dollar
       className={className}
       style={style}
@@ -855,10 +855,10 @@ export const CSDollarOutline = memo(
   ),
 );
 
-CSDollarOutline.displayName = 'CSDollarOutline';
+CSDollarOutline.displayName = "CSDollarOutline";
 
 export const CSDocSettingsOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <DocSettings
       className={className}
       style={style}
@@ -867,10 +867,10 @@ export const CSDocSettingsOutline = memo(
   ),
 );
 
-CSDocSettingsOutline.displayName = 'CSDocSettingsOutline';
+CSDocSettingsOutline.displayName = "CSDocSettingsOutline";
 
 export const CSDocumentAddOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <DocumentAdd
       className={className}
       style={style}
@@ -879,10 +879,10 @@ export const CSDocumentAddOutline = memo(
   ),
 );
 
-CSDocumentAddOutline.displayName = 'CSDocumentAddOutline';
+CSDocumentAddOutline.displayName = "CSDocumentAddOutline";
 
 export const CSDocumentTextOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <DocumentText
       className={className}
       style={style}
@@ -891,10 +891,10 @@ export const CSDocumentTextOutline = memo(
   ),
 );
 
-CSDocumentTextOutline.displayName = 'CSDocumentTextOutline';
+CSDocumentTextOutline.displayName = "CSDocumentTextOutline";
 
 export const CSDoubleChevronOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <DoubleChevron
       className={className}
       style={style}
@@ -903,10 +903,10 @@ export const CSDoubleChevronOutline = memo(
   ),
 );
 
-CSDoubleChevronOutline.displayName = 'CSDoubleChevronOutline';
+CSDoubleChevronOutline.displayName = "CSDoubleChevronOutline";
 
 export const CSDownloadOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Download
       className={className}
       style={style}
@@ -915,10 +915,10 @@ export const CSDownloadOutline = memo(
   ),
 );
 
-CSDownloadOutline.displayName = 'CSDownloadOutline';
+CSDownloadOutline.displayName = "CSDownloadOutline";
 
 export const CSDropdownOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Dropdown
       className={className}
       style={style}
@@ -927,10 +927,10 @@ export const CSDropdownOutline = memo(
   ),
 );
 
-CSDropdownOutline.displayName = 'CSDropdownOutline';
+CSDropdownOutline.displayName = "CSDropdownOutline";
 
 export const CSDuplicateOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Duplicate
       className={className}
       style={style}
@@ -939,10 +939,10 @@ export const CSDuplicateOutline = memo(
   ),
 );
 
-CSDuplicateOutline.displayName = 'CSDuplicateOutline';
+CSDuplicateOutline.displayName = "CSDuplicateOutline";
 
 export const CSEditOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Edit
       className={className}
       style={style}
@@ -951,10 +951,10 @@ export const CSEditOutline = memo(
   ),
 );
 
-CSEditOutline.displayName = 'CSEditOutline';
+CSEditOutline.displayName = "CSEditOutline";
 
 export const CSEmojiHappyOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <EmojiHappy
       className={className}
       style={style}
@@ -963,10 +963,10 @@ export const CSEmojiHappyOutline = memo(
   ),
 );
 
-CSEmojiHappyOutline.displayName = 'CSEmojiHappyOutline';
+CSEmojiHappyOutline.displayName = "CSEmojiHappyOutline";
 
 export const CSExternalLinkOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ExternalLink
       className={className}
       style={style}
@@ -975,10 +975,10 @@ export const CSExternalLinkOutline = memo(
   ),
 );
 
-CSExternalLinkOutline.displayName = 'CSExternalLinkOutline';
+CSExternalLinkOutline.displayName = "CSExternalLinkOutline";
 
 export const CSEyeOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Eye
       className={className}
       style={style}
@@ -987,10 +987,10 @@ export const CSEyeOutline = memo(
   ),
 );
 
-CSEyeOutline.displayName = 'CSEyeOutline';
+CSEyeOutline.displayName = "CSEyeOutline";
 
 export const CSEyeOffOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <EyeOff
       className={className}
       style={style}
@@ -999,10 +999,10 @@ export const CSEyeOffOutline = memo(
   ),
 );
 
-CSEyeOffOutline.displayName = 'CSEyeOffOutline';
+CSEyeOffOutline.displayName = "CSEyeOffOutline";
 
 export const CSFlagOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Flag
       className={className}
       style={style}
@@ -1011,10 +1011,10 @@ export const CSFlagOutline = memo(
   ),
 );
 
-CSFlagOutline.displayName = 'CSFlagOutline';
+CSFlagOutline.displayName = "CSFlagOutline";
 
 export const CSFolderOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Folder
       className={className}
       style={style}
@@ -1023,10 +1023,10 @@ export const CSFolderOutline = memo(
   ),
 );
 
-CSFolderOutline.displayName = 'CSFolderOutline';
+CSFolderOutline.displayName = "CSFolderOutline";
 
 export const CSFolderOpenOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <FolderOpen
       className={className}
       style={style}
@@ -1035,10 +1035,10 @@ export const CSFolderOpenOutline = memo(
   ),
 );
 
-CSFolderOpenOutline.displayName = 'CSFolderOpenOutline';
+CSFolderOpenOutline.displayName = "CSFolderOpenOutline";
 
 export const CSFormOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Form
       className={className}
       style={style}
@@ -1047,10 +1047,10 @@ export const CSFormOutline = memo(
   ),
 );
 
-CSFormOutline.displayName = 'CSFormOutline';
+CSFormOutline.displayName = "CSFormOutline";
 
 export const CSFullSizeOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <FullSize
       className={className}
       style={style}
@@ -1059,10 +1059,10 @@ export const CSFullSizeOutline = memo(
   ),
 );
 
-CSFullSizeOutline.displayName = 'CSFullSizeOutline';
+CSFullSizeOutline.displayName = "CSFullSizeOutline";
 
 export const CSGlobeOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Globe
       className={className}
       style={style}
@@ -1071,10 +1071,10 @@ export const CSGlobeOutline = memo(
   ),
 );
 
-CSGlobeOutline.displayName = 'CSGlobeOutline';
+CSGlobeOutline.displayName = "CSGlobeOutline";
 
 export const CSGlobeAltOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <GlobeAlt
       className={className}
       style={style}
@@ -1083,10 +1083,10 @@ export const CSGlobeAltOutline = memo(
   ),
 );
 
-CSGlobeAltOutline.displayName = 'CSGlobeAltOutline';
+CSGlobeAltOutline.displayName = "CSGlobeAltOutline";
 
 export const CSGridOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Grid
       className={className}
       style={style}
@@ -1095,10 +1095,10 @@ export const CSGridOutline = memo(
   ),
 );
 
-CSGridOutline.displayName = 'CSGridOutline';
+CSGridOutline.displayName = "CSGridOutline";
 
 export const CSHandOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Hand
       className={className}
       style={style}
@@ -1107,10 +1107,10 @@ export const CSHandOutline = memo(
   ),
 );
 
-CSHandOutline.displayName = 'CSHandOutline';
+CSHandOutline.displayName = "CSHandOutline";
 
 export const CSHeartOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Heart
       className={className}
       style={style}
@@ -1119,10 +1119,10 @@ export const CSHeartOutline = memo(
   ),
 );
 
-CSHeartOutline.displayName = 'CSHeartOutline';
+CSHeartOutline.displayName = "CSHeartOutline";
 
 export const CSHomeOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Home
       className={className}
       style={style}
@@ -1131,10 +1131,10 @@ export const CSHomeOutline = memo(
   ),
 );
 
-CSHomeOutline.displayName = 'CSHomeOutline';
+CSHomeOutline.displayName = "CSHomeOutline";
 
 export const CSIconPuzzleOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <IconPuzzle
       className={className}
       style={style}
@@ -1143,10 +1143,10 @@ export const CSIconPuzzleOutline = memo(
   ),
 );
 
-CSIconPuzzleOutline.displayName = 'CSIconPuzzleOutline';
+CSIconPuzzleOutline.displayName = "CSIconPuzzleOutline";
 
 export const CSInboxOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Inbox
       className={className}
       style={style}
@@ -1155,10 +1155,10 @@ export const CSInboxOutline = memo(
   ),
 );
 
-CSInboxOutline.displayName = 'CSInboxOutline';
+CSInboxOutline.displayName = "CSInboxOutline";
 
 export const CSInfoOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Info
       className={className}
       style={style}
@@ -1167,10 +1167,10 @@ export const CSInfoOutline = memo(
   ),
 );
 
-CSInfoOutline.displayName = 'CSInfoOutline';
+CSInfoOutline.displayName = "CSInfoOutline";
 
 export const CSInfoCircleOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <InfoCircle
       className={className}
       style={style}
@@ -1179,10 +1179,10 @@ export const CSInfoCircleOutline = memo(
   ),
 );
 
-CSInfoCircleOutline.displayName = 'CSInfoCircleOutline';
+CSInfoCircleOutline.displayName = "CSInfoCircleOutline";
 
 export const CSInputFormOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <InputForm
       className={className}
       style={style}
@@ -1191,10 +1191,10 @@ export const CSInputFormOutline = memo(
   ),
 );
 
-CSInputFormOutline.displayName = 'CSInputFormOutline';
+CSInputFormOutline.displayName = "CSInputFormOutline";
 
 export const CSKeyOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Key
       className={className}
       style={style}
@@ -1203,10 +1203,10 @@ export const CSKeyOutline = memo(
   ),
 );
 
-CSKeyOutline.displayName = 'CSKeyOutline';
+CSKeyOutline.displayName = "CSKeyOutline";
 
 export const CSLargeGridOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <LargeGrid
       className={className}
       style={style}
@@ -1215,10 +1215,10 @@ export const CSLargeGridOutline = memo(
   ),
 );
 
-CSLargeGridOutline.displayName = 'CSLargeGridOutline';
+CSLargeGridOutline.displayName = "CSLargeGridOutline";
 
 export const CSLargeListOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <LargeList
       className={className}
       style={style}
@@ -1227,10 +1227,10 @@ export const CSLargeListOutline = memo(
   ),
 );
 
-CSLargeListOutline.displayName = 'CSLargeListOutline';
+CSLargeListOutline.displayName = "CSLargeListOutline";
 
 export const CSLayerOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Layer
       className={className}
       style={style}
@@ -1239,10 +1239,10 @@ export const CSLayerOutline = memo(
   ),
 );
 
-CSLayerOutline.displayName = 'CSLayerOutline';
+CSLayerOutline.displayName = "CSLayerOutline";
 
 export const CSLightningBoltOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <LightningBolt
       className={className}
       style={style}
@@ -1251,10 +1251,10 @@ export const CSLightningBoltOutline = memo(
   ),
 );
 
-CSLightningBoltOutline.displayName = 'CSLightningBoltOutline';
+CSLightningBoltOutline.displayName = "CSLightningBoltOutline";
 
 export const CSLinkedOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Linked
       className={className}
       style={style}
@@ -1263,10 +1263,10 @@ export const CSLinkedOutline = memo(
   ),
 );
 
-CSLinkedOutline.displayName = 'CSLinkedOutline';
+CSLinkedOutline.displayName = "CSLinkedOutline";
 
 export const CSListOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <List
       className={className}
       style={style}
@@ -1275,10 +1275,10 @@ export const CSListOutline = memo(
   ),
 );
 
-CSListOutline.displayName = 'CSListOutline';
+CSListOutline.displayName = "CSListOutline";
 
 export const CSLocationMarkerOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <LocationMarker
       className={className}
       style={style}
@@ -1287,10 +1287,10 @@ export const CSLocationMarkerOutline = memo(
   ),
 );
 
-CSLocationMarkerOutline.displayName = 'CSLocationMarkerOutline';
+CSLocationMarkerOutline.displayName = "CSLocationMarkerOutline";
 
 export const CSLockClosedOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <LockClosed
       className={className}
       style={style}
@@ -1299,10 +1299,10 @@ export const CSLockClosedOutline = memo(
   ),
 );
 
-CSLockClosedOutline.displayName = 'CSLockClosedOutline';
+CSLockClosedOutline.displayName = "CSLockClosedOutline";
 
 export const CSLockOpenOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <LockOpen
       className={className}
       style={style}
@@ -1311,10 +1311,10 @@ export const CSLockOpenOutline = memo(
   ),
 );
 
-CSLockOpenOutline.displayName = 'CSLockOpenOutline';
+CSLockOpenOutline.displayName = "CSLockOpenOutline";
 
 export const CSLogoutOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Logout
       className={className}
       style={style}
@@ -1323,10 +1323,10 @@ export const CSLogoutOutline = memo(
   ),
 );
 
-CSLogoutOutline.displayName = 'CSLogoutOutline';
+CSLogoutOutline.displayName = "CSLogoutOutline";
 
 export const CSMailOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Mail
       className={className}
       style={style}
@@ -1335,10 +1335,10 @@ export const CSMailOutline = memo(
   ),
 );
 
-CSMailOutline.displayName = 'CSMailOutline';
+CSMailOutline.displayName = "CSMailOutline";
 
 export const CSMailOpenOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <MailOpen
       className={className}
       style={style}
@@ -1347,10 +1347,10 @@ export const CSMailOpenOutline = memo(
   ),
 );
 
-CSMailOpenOutline.displayName = 'CSMailOpenOutline';
+CSMailOpenOutline.displayName = "CSMailOpenOutline";
 
 export const CSMapOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Map
       className={className}
       style={style}
@@ -1359,10 +1359,10 @@ export const CSMapOutline = memo(
   ),
 );
 
-CSMapOutline.displayName = 'CSMapOutline';
+CSMapOutline.displayName = "CSMapOutline";
 
 export const CSMicrophoneOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Microphone
       className={className}
       style={style}
@@ -1371,10 +1371,10 @@ export const CSMicrophoneOutline = memo(
   ),
 );
 
-CSMicrophoneOutline.displayName = 'CSMicrophoneOutline';
+CSMicrophoneOutline.displayName = "CSMicrophoneOutline";
 
 export const CSMinusCircleOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <MinusCircle
       className={className}
       style={style}
@@ -1383,10 +1383,10 @@ export const CSMinusCircleOutline = memo(
   ),
 );
 
-CSMinusCircleOutline.displayName = 'CSMinusCircleOutline';
+CSMinusCircleOutline.displayName = "CSMinusCircleOutline";
 
 export const CSModalOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Modal
       className={className}
       style={style}
@@ -1395,10 +1395,10 @@ export const CSModalOutline = memo(
   ),
 );
 
-CSModalOutline.displayName = 'CSModalOutline';
+CSModalOutline.displayName = "CSModalOutline";
 
 export const CSMoreHorizontalOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <MoreHorizontal
       className={className}
       style={style}
@@ -1407,10 +1407,10 @@ export const CSMoreHorizontalOutline = memo(
   ),
 );
 
-CSMoreHorizontalOutline.displayName = 'CSMoreHorizontalOutline';
+CSMoreHorizontalOutline.displayName = "CSMoreHorizontalOutline";
 
 export const CSMoreVerticalOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <MoreVertical
       className={className}
       style={style}
@@ -1419,10 +1419,10 @@ export const CSMoreVerticalOutline = memo(
   ),
 );
 
-CSMoreVerticalOutline.displayName = 'CSMoreVerticalOutline';
+CSMoreVerticalOutline.displayName = "CSMoreVerticalOutline";
 
 export const CSNavigationalOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Navigational
       className={className}
       style={style}
@@ -1431,10 +1431,10 @@ export const CSNavigationalOutline = memo(
   ),
 );
 
-CSNavigationalOutline.displayName = 'CSNavigationalOutline';
+CSNavigationalOutline.displayName = "CSNavigationalOutline";
 
 export const CSNewspaperOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Newspaper
       className={className}
       style={style}
@@ -1443,10 +1443,10 @@ export const CSNewspaperOutline = memo(
   ),
 );
 
-CSNewspaperOutline.displayName = 'CSNewspaperOutline';
+CSNewspaperOutline.displayName = "CSNewspaperOutline";
 
 export const CSOfficeBuildingOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <OfficeBuilding
       className={className}
       style={style}
@@ -1455,10 +1455,10 @@ export const CSOfficeBuildingOutline = memo(
   ),
 );
 
-CSOfficeBuildingOutline.displayName = 'CSOfficeBuildingOutline';
+CSOfficeBuildingOutline.displayName = "CSOfficeBuildingOutline";
 
 export const CSPaginationOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Pagination
       className={className}
       style={style}
@@ -1467,10 +1467,10 @@ export const CSPaginationOutline = memo(
   ),
 );
 
-CSPaginationOutline.displayName = 'CSPaginationOutline';
+CSPaginationOutline.displayName = "CSPaginationOutline";
 
 export const CSPaperAirplaneOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <PaperAirplane
       className={className}
       style={style}
@@ -1479,10 +1479,10 @@ export const CSPaperAirplaneOutline = memo(
   ),
 );
 
-CSPaperAirplaneOutline.displayName = 'CSPaperAirplaneOutline';
+CSPaperAirplaneOutline.displayName = "CSPaperAirplaneOutline";
 
 export const CSPencilAltOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <PencilAlt
       className={className}
       style={style}
@@ -1491,10 +1491,10 @@ export const CSPencilAltOutline = memo(
   ),
 );
 
-CSPencilAltOutline.displayName = 'CSPencilAltOutline';
+CSPencilAltOutline.displayName = "CSPencilAltOutline";
 
 export const CSPhoneOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Phone
       className={className}
       style={style}
@@ -1503,10 +1503,10 @@ export const CSPhoneOutline = memo(
   ),
 );
 
-CSPhoneOutline.displayName = 'CSPhoneOutline';
+CSPhoneOutline.displayName = "CSPhoneOutline";
 
 export const CSPhotographOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Photograph
       className={className}
       style={style}
@@ -1515,10 +1515,10 @@ export const CSPhotographOutline = memo(
   ),
 );
 
-CSPhotographOutline.displayName = 'CSPhotographOutline';
+CSPhotographOutline.displayName = "CSPhotographOutline";
 
 export const CSPieChartOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <PieChart
       className={className}
       style={style}
@@ -1527,10 +1527,10 @@ export const CSPieChartOutline = memo(
   ),
 );
 
-CSPieChartOutline.displayName = 'CSPieChartOutline';
+CSPieChartOutline.displayName = "CSPieChartOutline";
 
 export const CSPoliceOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Police
       className={className}
       style={style}
@@ -1539,10 +1539,10 @@ export const CSPoliceOutline = memo(
   ),
 );
 
-CSPoliceOutline.displayName = 'CSPoliceOutline';
+CSPoliceOutline.displayName = "CSPoliceOutline";
 
 export const CSPrinterOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Printer
       className={className}
       style={style}
@@ -1551,10 +1551,10 @@ export const CSPrinterOutline = memo(
   ),
 );
 
-CSPrinterOutline.displayName = 'CSPrinterOutline';
+CSPrinterOutline.displayName = "CSPrinterOutline";
 
 export const CSProgressOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Progress
       className={className}
       style={style}
@@ -1563,10 +1563,10 @@ export const CSProgressOutline = memo(
   ),
 );
 
-CSProgressOutline.displayName = 'CSProgressOutline';
+CSProgressOutline.displayName = "CSProgressOutline";
 
 export const CSQuestionLinedOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <QuestionLined
       className={className}
       style={style}
@@ -1575,10 +1575,10 @@ export const CSQuestionLinedOutline = memo(
   ),
 );
 
-CSQuestionLinedOutline.displayName = 'CSQuestionLinedOutline';
+CSQuestionLinedOutline.displayName = "CSQuestionLinedOutline";
 
 export const CSRadioOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Radio
       className={className}
       style={style}
@@ -1587,10 +1587,10 @@ export const CSRadioOutline = memo(
   ),
 );
 
-CSRadioOutline.displayName = 'CSRadioOutline';
+CSRadioOutline.displayName = "CSRadioOutline";
 
 export const CSRefreshOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Refresh
       className={className}
       style={style}
@@ -1599,10 +1599,10 @@ export const CSRefreshOutline = memo(
   ),
 );
 
-CSRefreshOutline.displayName = 'CSRefreshOutline';
+CSRefreshOutline.displayName = "CSRefreshOutline";
 
 export const CSRequestOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Request
       className={className}
       style={style}
@@ -1611,10 +1611,10 @@ export const CSRequestOutline = memo(
   ),
 );
 
-CSRequestOutline.displayName = 'CSRequestOutline';
+CSRequestOutline.displayName = "CSRequestOutline";
 
 export const CSSearchOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Search
       className={className}
       style={style}
@@ -1623,10 +1623,10 @@ export const CSSearchOutline = memo(
   ),
 );
 
-CSSearchOutline.displayName = 'CSSearchOutline';
+CSSearchOutline.displayName = "CSSearchOutline";
 
 export const CSSelectorOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Selector
       className={className}
       style={style}
@@ -1635,10 +1635,10 @@ export const CSSelectorOutline = memo(
   ),
 );
 
-CSSelectorOutline.displayName = 'CSSelectorOutline';
+CSSelectorOutline.displayName = "CSSelectorOutline";
 
 export const CSSendOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Send
       className={className}
       style={style}
@@ -1647,10 +1647,10 @@ export const CSSendOutline = memo(
   ),
 );
 
-CSSendOutline.displayName = 'CSSendOutline';
+CSSendOutline.displayName = "CSSendOutline";
 
 export const CSSettingOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Setting
       className={className}
       style={style}
@@ -1659,10 +1659,10 @@ export const CSSettingOutline = memo(
   ),
 );
 
-CSSettingOutline.displayName = 'CSSettingOutline';
+CSSettingOutline.displayName = "CSSettingOutline";
 
 export const CSShareOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Share
       className={className}
       style={style}
@@ -1671,10 +1671,10 @@ export const CSShareOutline = memo(
   ),
 );
 
-CSShareOutline.displayName = 'CSShareOutline';
+CSShareOutline.displayName = "CSShareOutline";
 
 export const CSShieldCheckOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ShieldCheck
       className={className}
       style={style}
@@ -1683,10 +1683,10 @@ export const CSShieldCheckOutline = memo(
   ),
 );
 
-CSShieldCheckOutline.displayName = 'CSShieldCheckOutline';
+CSShieldCheckOutline.displayName = "CSShieldCheckOutline";
 
 export const CSShoppingBagOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ShoppingBag
       className={className}
       style={style}
@@ -1695,10 +1695,10 @@ export const CSShoppingBagOutline = memo(
   ),
 );
 
-CSShoppingBagOutline.displayName = 'CSShoppingBagOutline';
+CSShoppingBagOutline.displayName = "CSShoppingBagOutline";
 
 export const CSStepperOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Stepper
       className={className}
       style={style}
@@ -1707,10 +1707,10 @@ export const CSStepperOutline = memo(
   ),
 );
 
-CSStepperOutline.displayName = 'CSStepperOutline';
+CSStepperOutline.displayName = "CSStepperOutline";
 
 export const CSSubmitOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Submit
       className={className}
       style={style}
@@ -1719,10 +1719,10 @@ export const CSSubmitOutline = memo(
   ),
 );
 
-CSSubmitOutline.displayName = 'CSSubmitOutline';
+CSSubmitOutline.displayName = "CSSubmitOutline";
 
 export const CSTableOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Table
       className={className}
       style={style}
@@ -1731,10 +1731,10 @@ export const CSTableOutline = memo(
   ),
 );
 
-CSTableOutline.displayName = 'CSTableOutline';
+CSTableOutline.displayName = "CSTableOutline";
 
 export const CSTagOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Tag
       className={className}
       style={style}
@@ -1743,10 +1743,10 @@ export const CSTagOutline = memo(
   ),
 );
 
-CSTagOutline.displayName = 'CSTagOutline';
+CSTagOutline.displayName = "CSTagOutline";
 
 export const CSTemplateOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Template
       className={className}
       style={style}
@@ -1755,10 +1755,10 @@ export const CSTemplateOutline = memo(
   ),
 );
 
-CSTemplateOutline.displayName = 'CSTemplateOutline';
+CSTemplateOutline.displayName = "CSTemplateOutline";
 
 export const CSToggleOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Toggle
       className={className}
       style={style}
@@ -1767,10 +1767,10 @@ export const CSToggleOutline = memo(
   ),
 );
 
-CSToggleOutline.displayName = 'CSToggleOutline';
+CSToggleOutline.displayName = "CSToggleOutline";
 
 export const CSTrashOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Trash
       className={className}
       style={style}
@@ -1779,10 +1779,10 @@ export const CSTrashOutline = memo(
   ),
 );
 
-CSTrashOutline.displayName = 'CSTrashOutline';
+CSTrashOutline.displayName = "CSTrashOutline";
 
 export const CSTruckOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Truck
       className={className}
       style={style}
@@ -1791,10 +1791,10 @@ export const CSTruckOutline = memo(
   ),
 );
 
-CSTruckOutline.displayName = 'CSTruckOutline';
+CSTruckOutline.displayName = "CSTruckOutline";
 
 export const CSUndoOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Undo
       className={className}
       style={style}
@@ -1803,10 +1803,10 @@ export const CSUndoOutline = memo(
   ),
 );
 
-CSUndoOutline.displayName = 'CSUndoOutline';
+CSUndoOutline.displayName = "CSUndoOutline";
 
 export const CSUnlinkedOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Unlinked
       className={className}
       style={style}
@@ -1815,10 +1815,10 @@ export const CSUnlinkedOutline = memo(
   ),
 );
 
-CSUnlinkedOutline.displayName = 'CSUnlinkedOutline';
+CSUnlinkedOutline.displayName = "CSUnlinkedOutline";
 
 export const CSUploadOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Upload
       className={className}
       style={style}
@@ -1827,10 +1827,10 @@ export const CSUploadOutline = memo(
   ),
 );
 
-CSUploadOutline.displayName = 'CSUploadOutline';
+CSUploadOutline.displayName = "CSUploadOutline";
 
 export const CSUploadPictureOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <UploadPicture
       className={className}
       style={style}
@@ -1839,10 +1839,10 @@ export const CSUploadPictureOutline = memo(
   ),
 );
 
-CSUploadPictureOutline.displayName = 'CSUploadPictureOutline';
+CSUploadPictureOutline.displayName = "CSUploadPictureOutline";
 
 export const CSUserOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <User
       className={className}
       style={style}
@@ -1851,10 +1851,10 @@ export const CSUserOutline = memo(
   ),
 );
 
-CSUserOutline.displayName = 'CSUserOutline';
+CSUserOutline.displayName = "CSUserOutline";
 
 export const CSUserAddOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <UserAdd
       className={className}
       style={style}
@@ -1863,10 +1863,10 @@ export const CSUserAddOutline = memo(
   ),
 );
 
-CSUserAddOutline.displayName = 'CSUserAddOutline';
+CSUserAddOutline.displayName = "CSUserAddOutline";
 
 export const CSUserCircleOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <UserCircle
       className={className}
       style={style}
@@ -1875,10 +1875,10 @@ export const CSUserCircleOutline = memo(
   ),
 );
 
-CSUserCircleOutline.displayName = 'CSUserCircleOutline';
+CSUserCircleOutline.displayName = "CSUserCircleOutline";
 
 export const CSUserGroupOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <UserGroup
       className={className}
       style={style}
@@ -1887,10 +1887,10 @@ export const CSUserGroupOutline = memo(
   ),
 );
 
-CSUserGroupOutline.displayName = 'CSUserGroupOutline';
+CSUserGroupOutline.displayName = "CSUserGroupOutline";
 
 export const CSUserRemoveOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <UserRemove
       className={className}
       style={style}
@@ -1899,10 +1899,10 @@ export const CSUserRemoveOutline = memo(
   ),
 );
 
-CSUserRemoveOutline.displayName = 'CSUserRemoveOutline';
+CSUserRemoveOutline.displayName = "CSUserRemoveOutline";
 
 export const CSUsersOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Users
       className={className}
       style={style}
@@ -1911,10 +1911,10 @@ export const CSUsersOutline = memo(
   ),
 );
 
-CSUsersOutline.displayName = 'CSUsersOutline';
+CSUsersOutline.displayName = "CSUsersOutline";
 
 export const CSVaccineOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Vaccine
       className={className}
       style={style}
@@ -1923,10 +1923,10 @@ export const CSVaccineOutline = memo(
   ),
 );
 
-CSVaccineOutline.displayName = 'CSVaccineOutline';
+CSVaccineOutline.displayName = "CSVaccineOutline";
 
 export const CSQrcodeOutline = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Qrcode
       className={className}
       style={style}
@@ -1935,4 +1935,4 @@ export const CSQrcodeOutline = memo(
   ),
 );
 
-CSQrcodeOutline.displayName = 'CSQrcodeOutline';
+CSQrcodeOutline.displayName = "CSQrcodeOutline";

@@ -1,52 +1,52 @@
 import { createAction } from "redux-actions";
 
 export const getAllCategoryTourRequest = createAction(
-  "GET_ALL_CATEGORY_TOUR_REQUEST"
+  "GET_ALL_CATEGORY_TOUR_REQUEST",
 );
 export const getAllCategoryTourSuccess = createAction(
-  "GET_ALL_CATEGORY_TOUR_SUCCESS"
+  "GET_ALL_CATEGORY_TOUR_SUCCESS",
 );
 export const getAllCategoryTourFailure = createAction(
-  "GET_ALL_CATEGORY_TOUR_FAILURE"
+  "GET_ALL_CATEGORY_TOUR_FAILURE",
 );
 
 export const createCategoryTourRequest = createAction(
-  "CREATE_CATEGORY_TOUR_REQUEST"
+  "CREATE_CATEGORY_TOUR_REQUEST",
 );
 export const createCategoryTourSuccess = createAction(
-  "CREATE_CATEGORY_TOUR_SUCCESS"
+  "CREATE_CATEGORY_TOUR_SUCCESS",
 );
 export const createCategoryTourFailure = createAction(
-  "CREATE_CATEGORY_TOUR_FAILURE"
+  "CREATE_CATEGORY_TOUR_FAILURE",
 );
 export const resetCreateCategoryTour = createAction(
-  "RESET_CREATE_CATEGORY_TOUR"
+  "RESET_CREATE_CATEGORY_TOUR",
 );
 
 export const updateCategoryTourRequest = createAction(
-  "UPDATE_CATEGORY_TOUR_REQUEST"
+  "UPDATE_CATEGORY_TOUR_REQUEST",
 );
 export const updateCategoryTourSuccess = createAction(
-  "UPDATE_CATEGORY_TOUR_SUCCESS"
+  "UPDATE_CATEGORY_TOUR_SUCCESS",
 );
 export const updateCategoryTourFailure = createAction(
-  "UPDATE_CATEGORY_TOUR_FAILURE"
+  "UPDATE_CATEGORY_TOUR_FAILURE",
 );
 export const resetUpdateCategoryTour = createAction(
-  "RESET_UPDATE_CATEGORY_TOUR"
+  "RESET_UPDATE_CATEGORY_TOUR",
 );
 
 export const deleteCategoryTourRequest = createAction(
-  "DELETE_CATEGORY_TOUR_REQUEST"
+  "DELETE_CATEGORY_TOUR_REQUEST",
 );
 export const deleteCategoryTourSuccess = createAction(
-  "DELETE_CATEGORY_TOUR_SUCCESS"
+  "DELETE_CATEGORY_TOUR_SUCCESS",
 );
 export const deleteCategoryTourFailure = createAction(
-  "DELETE_CATEGORY_TOUR_FAILURE"
+  "DELETE_CATEGORY_TOUR_FAILURE",
 );
 export const resetDeleteCategoryTour = createAction(
-  "RESET_DELETE_CATEGORY_TOUR"
+  "RESET_DELETE_CATEGORY_TOUR",
 );
 
 export const resetCategoryTourState = createAction("RESET_CATEGORY_TOUR_STATE");

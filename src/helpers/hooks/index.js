@@ -1,4 +1,3 @@
-export * from './useDebounce';
-export * from './useOnClickOutside';
-export * from './useDebounceEditor';
-
+export * from "./useDebounce";
+export * from "./useOnClickOutside";
+export * from "./useDebounceEditor";

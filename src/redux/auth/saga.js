@@ -9,7 +9,7 @@ import * as Actions from "./actions";
 function* loginRequest({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.post("/user/sign-in", payload)
+      axiosMicro.post("/user/sign-in", payload),
     );
     if (response.data.status === "OK") {
       const { access_token: accessToken, refresh_token: refreshToken } =
@@ -42,7 +42,7 @@ function* logoutRequest({ payload }) {
 function* checkUserExists({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.get("/authentications/check", { params: payload })
+      axiosMicro.get("/authentications/check", { params: payload }),
     );
     yield put(Actions.checkUserExistsSuccess(response.data));
   } catch (e) {
@@ -56,7 +56,7 @@ function* checkUserExists({ payload }) {
 function* register({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.post("/user/create-user", payload)
+      axiosMicro.post("/user/create-user", payload),
     );
     if (response.data.status === "OK") {
       yield put(Actions.registerSuccess(response.data));
@@ -75,7 +75,7 @@ function* register({ payload }) {
 function* updateUser({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.put(`/user/update-user/${payload.id}`, payload.body)
+      axiosMicro.put(`/user/update-user/${payload.id}`, payload.body),
     );
     if (response.data.status === "OK") {
       yield put(Actions.updateUserSuccess(response.data));
@@ -94,7 +94,7 @@ function* updateUser({ payload }) {
 function* uploadFile({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.post("/files/upload", payload)
+      axiosMicro.post("/files/upload", payload),
     );
     yield put(Actions.uploadFileSuccess(response.data));
   } catch (e) {

@@ -137,7 +137,7 @@ const reducer = handleActions(
     [Actions.resetCategoryState]: () => initialState,
     // #endregion
   },
-  initialState
+  initialState,
 );
 
 export default reducer;

@@ -178,7 +178,7 @@ const reducer = handleActions(
     [Actions.resetFoodState]: () => initialState,
     // #endregion
   },
-  initialState
+  initialState,
 );
 
 export default reducer;

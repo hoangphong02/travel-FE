@@ -9,7 +9,7 @@ function* getAllBlogs({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/blog?${payload}`)
-        : () => axiosMicro.get("/blog", { params: payload })
+        : () => axiosMicro.get("/blog", { params: payload }),
     );
     yield put(Actions.getAllBlogsSuccess(response.data));
   } catch (error) {
@@ -25,7 +25,7 @@ function* getDetailBlog({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/blog/${payload.id}`)
-        : () => axiosMicro.get(`/blog/${payload.id}`, { params: payload })
+        : () => axiosMicro.get(`/blog/${payload.id}`, { params: payload }),
     );
     yield put(Actions.getDetailBlogsSuccess(response.data));
   } catch (error) {
@@ -56,7 +56,7 @@ function* createBlogs({ payload }) {
 function* updateBlogs({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.put(`/blog/${payload.id}`, payload.body)
+      axiosMicro.put(`/blog/${payload.id}`, payload.body),
     );
     if (response?.data?.status === "OK") {
       yield put(Actions.updateBlogsSuccess(response.data));

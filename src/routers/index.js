@@ -1,2 +1,3 @@
-export * from './routerAuth';
-export * from './routerUser';
+export * from "./routerAuth";
+export * from "./routerUser";
+export * from "./routerAdmin";

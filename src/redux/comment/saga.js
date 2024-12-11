@@ -9,7 +9,7 @@ function* getAllComments({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/comment?${payload}`)
-        : () => axiosMicro.get("/comment", { params: payload })
+        : () => axiosMicro.get("/comment", { params: payload }),
     );
     yield put(Actions.getAllCommentsSuccess(response.data));
   } catch (error) {
@@ -40,7 +40,7 @@ function* createComment({ payload }) {
 function* updateComment({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.put(`/comment/${payload.id}`, payload.body)
+      axiosMicro.put(`/comment/${payload.id}`, payload.body),
     );
     yield put(Actions.updateCommentsSuccess(response.data));
   } catch (error) {
@@ -66,7 +66,7 @@ function* deleteComment({ payload }) {
 function* replyComment({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.post(`/comment/${payload.id}/reply`, payload.body)
+      axiosMicro.post(`/comment/${payload.id}/reply`, payload.body),
     );
     if (response?.data?.status === "OK") {
       yield put(Actions.replyCommentsSuccess(response.data));

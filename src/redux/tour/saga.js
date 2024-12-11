@@ -9,7 +9,7 @@ function* getAllTours({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/tour?${payload}`)
-        : () => axiosMicro.get("/tour", { params: payload })
+        : () => axiosMicro.get("/tour", { params: payload }),
     );
     yield put(Actions.getAllTourSuccess(response.data));
   } catch (error) {
@@ -25,7 +25,7 @@ function* getAllToursMain({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/tour/main?${payload}`)
-        : () => axiosMicro.get("/tour/main", { params: payload })
+        : () => axiosMicro.get("/tour/main", { params: payload }),
     );
     yield put(Actions.getAllTourMainSuccess(response.data));
   } catch (error) {
@@ -41,7 +41,7 @@ function* getAllToursFlop({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/tour/flop?${payload}`)
-        : () => axiosMicro.get("/tour/flop", { params: payload })
+        : () => axiosMicro.get("/tour/flop", { params: payload }),
     );
     yield put(Actions.getAllTourFlopSuccess(response.data));
   } catch (error) {
@@ -57,7 +57,7 @@ function* getDetailTours({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/tour/${payload.id}`)
-        : () => axiosMicro.get(`/tour/${payload.id}`, { params: payload })
+        : () => axiosMicro.get(`/tour/${payload.id}`, { params: payload }),
     );
     yield put(Actions.getDetailTourSuccess(response.data));
   } catch (error) {
@@ -88,7 +88,7 @@ function* createTour({ payload }) {
 function* updateTour({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.put(`/tour/${payload.id}`, payload.body)
+      axiosMicro.put(`/tour/${payload.id}`, payload.body),
     );
     yield put(Actions.updateTourSuccess(response.data));
   } catch (error) {
@@ -116,7 +116,7 @@ function* getSlidesTour({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/tour/slides?${payload}`)
-        : () => axiosMicro.get("/tour/slides", { params: payload })
+        : () => axiosMicro.get("/tour/slides", { params: payload }),
     );
     yield put(Actions.getSlidesTourSuccess(response.data));
   } catch (error) {

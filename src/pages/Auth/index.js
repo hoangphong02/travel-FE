@@ -3,8 +3,6 @@
 // export * from './RegisterPage';
 // export * from './RequiredChangePasswordPage';
 
-import LoginPage from './LoginPage';
+import LoginPage from "./LoginPage";
 
-export {
-  LoginPage,
-};
+export { LoginPage };

@@ -1,1 +1,1 @@
-export * from './axiosMicro';
+export * from "./axiosMicro";

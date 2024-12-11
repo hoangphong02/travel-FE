@@ -203,7 +203,7 @@ const reducer = handleActions(
     [Actions.resetAuthState]: () => initialState,
     // #endregion
   },
-  initialState
+  initialState,
 );
 
 export default reducer;

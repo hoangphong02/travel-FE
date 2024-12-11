@@ -35,7 +35,7 @@ function* getAllUsers({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/user/getAll?${payload}`)
-        : () => axiosMicro.get("/user/getAll", { params: payload })
+        : () => axiosMicro.get("/user/getAll", { params: payload }),
     );
     yield put(Actions.getAllUserSuccess(response.data));
   } catch (error) {
@@ -51,7 +51,7 @@ function* getWorkSchedules({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/user/guide?${payload}`)
-        : () => axiosMicro.get("/user/guide", { params: payload })
+        : () => axiosMicro.get("/user/guide", { params: payload }),
     );
     yield put(Actions.getWorkSchedulesSuccess(response.data));
   } catch (error) {

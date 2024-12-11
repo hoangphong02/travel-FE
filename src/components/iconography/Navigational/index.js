@@ -1,33 +1,33 @@
-import React, { memo } from 'react';
+import React, { memo } from "react";
 
-import { ReactComponent as ArrowDown } from '~/assets/images/iconography/Navigational/ArrowDown.svg';
-import { ReactComponent as ArrowLeft } from '~/assets/images/iconography/Navigational/ArrowLeft.svg';
-import { ReactComponent as ArrowNarrowLeft } from '~/assets/images/iconography/Navigational/ArrowNarrowLeft.svg';
-import { ReactComponent as ArrowNarrowRight } from '~/assets/images/iconography/Navigational/ArrowNarrowRight.svg';
-import { ReactComponent as ArrowRight } from '~/assets/images/iconography/Navigational/ArrowRight.svg';
-import { ReactComponent as ArrowUp } from '~/assets/images/iconography/Navigational/ArrowUp.svg';
-import { ReactComponent as BreadcrumbDot } from '~/assets/images/iconography/Navigational/BreadcrumbDot.svg';
-import { ReactComponent as ChevronDown } from '~/assets/images/iconography/Navigational/ChevronDown.svg';
-import { ReactComponent as ChevronLeft } from '~/assets/images/iconography/Navigational/ChevronLeft.svg';
-import { ReactComponent as ChevronRight } from '~/assets/images/iconography/Navigational/ChevronRight.svg';
-import { ReactComponent as ChevronUp } from '~/assets/images/iconography/Navigational/ChevronUp.svg';
-import { ReactComponent as Close } from '~/assets/images/iconography/Navigational/Close.svg';
-import { ReactComponent as DotsHorizontal } from '~/assets/images/iconography/Navigational/DotsHorizontal.svg';
-import { ReactComponent as DotsVertical } from '~/assets/images/iconography/Navigational/DotsVertical.svg';
-import { ReactComponent as DownNav } from '~/assets/images/iconography/Navigational/DownNav.svg';
-import { ReactComponent as Drag } from '~/assets/images/iconography/Navigational/Drag.svg';
-import { ReactComponent as Menu } from '~/assets/images/iconography/Navigational/Menu.svg';
-import { ReactComponent as Minus } from '~/assets/images/iconography/Navigational/Minus.svg';
-import { ReactComponent as Plus } from '~/assets/images/iconography/Navigational/Plus.svg';
-import { ReactComponent as PlusCircle } from '~/assets/images/iconography/Navigational/PlusCircle.svg';
-import { ReactComponent as Selector } from '~/assets/images/iconography/Navigational/Selector.svg';
-import { ReactComponent as SubArrow } from '~/assets/images/iconography/Navigational/SubArrow.svg';
-import { ReactComponent as UpNav } from '~/assets/images/iconography/Navigational/UpNav.svg';
-import { ReactComponent as ZoomIn } from '~/assets/images/iconography/Navigational/ZoomIn.svg';
-import { ReactComponent as ZoomOut } from '~/assets/images/iconography/Navigational/ZoomOut.svg';
+import { ReactComponent as ArrowDown } from "~/assets/images/iconography/Navigational/ArrowDown.svg";
+import { ReactComponent as ArrowLeft } from "~/assets/images/iconography/Navigational/ArrowLeft.svg";
+import { ReactComponent as ArrowNarrowLeft } from "~/assets/images/iconography/Navigational/ArrowNarrowLeft.svg";
+import { ReactComponent as ArrowNarrowRight } from "~/assets/images/iconography/Navigational/ArrowNarrowRight.svg";
+import { ReactComponent as ArrowRight } from "~/assets/images/iconography/Navigational/ArrowRight.svg";
+import { ReactComponent as ArrowUp } from "~/assets/images/iconography/Navigational/ArrowUp.svg";
+import { ReactComponent as BreadcrumbDot } from "~/assets/images/iconography/Navigational/BreadcrumbDot.svg";
+import { ReactComponent as ChevronDown } from "~/assets/images/iconography/Navigational/ChevronDown.svg";
+import { ReactComponent as ChevronLeft } from "~/assets/images/iconography/Navigational/ChevronLeft.svg";
+import { ReactComponent as ChevronRight } from "~/assets/images/iconography/Navigational/ChevronRight.svg";
+import { ReactComponent as ChevronUp } from "~/assets/images/iconography/Navigational/ChevronUp.svg";
+import { ReactComponent as Close } from "~/assets/images/iconography/Navigational/Close.svg";
+import { ReactComponent as DotsHorizontal } from "~/assets/images/iconography/Navigational/DotsHorizontal.svg";
+import { ReactComponent as DotsVertical } from "~/assets/images/iconography/Navigational/DotsVertical.svg";
+import { ReactComponent as DownNav } from "~/assets/images/iconography/Navigational/DownNav.svg";
+import { ReactComponent as Drag } from "~/assets/images/iconography/Navigational/Drag.svg";
+import { ReactComponent as Menu } from "~/assets/images/iconography/Navigational/Menu.svg";
+import { ReactComponent as Minus } from "~/assets/images/iconography/Navigational/Minus.svg";
+import { ReactComponent as Plus } from "~/assets/images/iconography/Navigational/Plus.svg";
+import { ReactComponent as PlusCircle } from "~/assets/images/iconography/Navigational/PlusCircle.svg";
+import { ReactComponent as Selector } from "~/assets/images/iconography/Navigational/Selector.svg";
+import { ReactComponent as SubArrow } from "~/assets/images/iconography/Navigational/SubArrow.svg";
+import { ReactComponent as UpNav } from "~/assets/images/iconography/Navigational/UpNav.svg";
+import { ReactComponent as ZoomIn } from "~/assets/images/iconography/Navigational/ZoomIn.svg";
+import { ReactComponent as ZoomOut } from "~/assets/images/iconography/Navigational/ZoomOut.svg";
 
 export const CSChevronDownNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ChevronDown
       className={className}
       style={style}
@@ -36,10 +36,10 @@ export const CSChevronDownNavigational = memo(
   ),
 );
 
-CSChevronDownNavigational.displayName = 'CSChevronDownNavigational';
+CSChevronDownNavigational.displayName = "CSChevronDownNavigational";
 
 export const CSArrowDownNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ArrowDown
       className={className}
       style={style}
@@ -48,10 +48,10 @@ export const CSArrowDownNavigational = memo(
   ),
 );
 
-CSArrowDownNavigational.displayName = 'CSArrowDownNavigational';
+CSArrowDownNavigational.displayName = "CSArrowDownNavigational";
 
 export const CSArrowLeftNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ArrowLeft
       className={className}
       style={style}
@@ -60,10 +60,10 @@ export const CSArrowLeftNavigational = memo(
   ),
 );
 
-CSArrowLeftNavigational.displayName = 'CSArrowLeftNavigational';
+CSArrowLeftNavigational.displayName = "CSArrowLeftNavigational";
 
 export const CSArrowNarrowLeftNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ArrowNarrowLeft
       className={className}
       style={style}
@@ -72,10 +72,10 @@ export const CSArrowNarrowLeftNavigational = memo(
   ),
 );
 
-CSArrowNarrowLeftNavigational.displayName = 'CSArrowNarrowLeftNavigational';
+CSArrowNarrowLeftNavigational.displayName = "CSArrowNarrowLeftNavigational";
 
 export const CSArrowNarrowRightNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ArrowNarrowRight
       className={className}
       style={style}
@@ -84,10 +84,10 @@ export const CSArrowNarrowRightNavigational = memo(
   ),
 );
 
-CSArrowNarrowRightNavigational.displayName = 'CSArrowNarrowRightNavigational';
+CSArrowNarrowRightNavigational.displayName = "CSArrowNarrowRightNavigational";
 
 export const CSArrowRightNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ArrowRight
       className={className}
       style={style}
@@ -96,10 +96,10 @@ export const CSArrowRightNavigational = memo(
   ),
 );
 
-CSArrowRightNavigational.displayName = 'CSArrowRightNavigational';
+CSArrowRightNavigational.displayName = "CSArrowRightNavigational";
 
 export const CSArrowUpNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ArrowUp
       className={className}
       style={style}
@@ -108,10 +108,10 @@ export const CSArrowUpNavigational = memo(
   ),
 );
 
-CSArrowUpNavigational.displayName = 'CSArrowUpNavigational';
+CSArrowUpNavigational.displayName = "CSArrowUpNavigational";
 
 export const CSBreadcrumbDotNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <BreadcrumbDot
       className={className}
       style={style}
@@ -120,10 +120,10 @@ export const CSBreadcrumbDotNavigational = memo(
   ),
 );
 
-CSBreadcrumbDotNavigational.displayName = 'CSBreadcrumbDotNavigational';
+CSBreadcrumbDotNavigational.displayName = "CSBreadcrumbDotNavigational";
 
 export const CSChevronLeftNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ChevronLeft
       className={className}
       style={style}
@@ -132,10 +132,10 @@ export const CSChevronLeftNavigational = memo(
   ),
 );
 
-CSChevronLeftNavigational.displayName = 'CSChevronLeftNavigational';
+CSChevronLeftNavigational.displayName = "CSChevronLeftNavigational";
 
 export const CSChevronRightNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ChevronRight
       className={className}
       style={style}
@@ -144,10 +144,10 @@ export const CSChevronRightNavigational = memo(
   ),
 );
 
-CSChevronRightNavigational.displayName = 'CSChevronRightNavigational';
+CSChevronRightNavigational.displayName = "CSChevronRightNavigational";
 
 export const CSChevronUpNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ChevronUp
       className={className}
       style={style}
@@ -156,10 +156,10 @@ export const CSChevronUpNavigational = memo(
   ),
 );
 
-CSChevronUpNavigational.displayName = 'CSChevronUpNavigational';
+CSChevronUpNavigational.displayName = "CSChevronUpNavigational";
 
 export const CSCloseNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Close
       className={className}
       style={style}
@@ -168,10 +168,10 @@ export const CSCloseNavigational = memo(
   ),
 );
 
-CSCloseNavigational.displayName = 'CSCloseNavigational';
+CSCloseNavigational.displayName = "CSCloseNavigational";
 
 export const CSDotsHorizontalNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <DotsHorizontal
       className={className}
       style={style}
@@ -180,10 +180,10 @@ export const CSDotsHorizontalNavigational = memo(
   ),
 );
 
-CSDotsHorizontalNavigational.displayName = 'CSDotsHorizontalNavigational';
+CSDotsHorizontalNavigational.displayName = "CSDotsHorizontalNavigational";
 
 export const CSDotsVerticalNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <DotsVertical
       className={className}
       style={style}
@@ -192,10 +192,10 @@ export const CSDotsVerticalNavigational = memo(
   ),
 );
 
-CSDotsVerticalNavigational.displayName = 'CSDotsVerticalNavigational';
+CSDotsVerticalNavigational.displayName = "CSDotsVerticalNavigational";
 
 export const CSDownNavNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <DownNav
       className={className}
       style={style}
@@ -204,10 +204,10 @@ export const CSDownNavNavigational = memo(
   ),
 );
 
-CSDownNavNavigational.displayName = 'CSDownNavNavigational';
+CSDownNavNavigational.displayName = "CSDownNavNavigational";
 
 export const CSDragNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Drag
       className={className}
       style={style}
@@ -216,10 +216,10 @@ export const CSDragNavigational = memo(
   ),
 );
 
-CSDragNavigational.displayName = 'CSDragNavigational';
+CSDragNavigational.displayName = "CSDragNavigational";
 
 export const CSMenuNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Menu
       className={className}
       style={style}
@@ -228,10 +228,10 @@ export const CSMenuNavigational = memo(
   ),
 );
 
-CSMenuNavigational.displayName = 'CSMenuNavigational';
+CSMenuNavigational.displayName = "CSMenuNavigational";
 
 export const CSMinusNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Minus
       className={className}
       style={style}
@@ -240,10 +240,10 @@ export const CSMinusNavigational = memo(
   ),
 );
 
-CSMinusNavigational.displayName = 'CSMinusNavigational';
+CSMinusNavigational.displayName = "CSMinusNavigational";
 
 export const CSPlusNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Plus
       className={className}
       style={style}
@@ -252,10 +252,10 @@ export const CSPlusNavigational = memo(
   ),
 );
 
-CSPlusNavigational.displayName = 'CSPlusNavigational';
+CSPlusNavigational.displayName = "CSPlusNavigational";
 
 export const CSPlusCircleNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <PlusCircle
       className={className}
       style={style}
@@ -264,10 +264,10 @@ export const CSPlusCircleNavigational = memo(
   ),
 );
 
-CSPlusCircleNavigational.displayName = 'CSPlusCircleNavigational';
+CSPlusCircleNavigational.displayName = "CSPlusCircleNavigational";
 
 export const CSSelectorNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <Selector
       className={className}
       style={style}
@@ -276,10 +276,10 @@ export const CSSelectorNavigational = memo(
   ),
 );
 
-CSSelectorNavigational.displayName = 'CSSelectorNavigational';
+CSSelectorNavigational.displayName = "CSSelectorNavigational";
 
 export const CSSubArrowNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <SubArrow
       className={className}
       style={style}
@@ -288,10 +288,10 @@ export const CSSubArrowNavigational = memo(
   ),
 );
 
-CSSubArrowNavigational.displayName = 'CSSubArrowNavigational';
+CSSubArrowNavigational.displayName = "CSSubArrowNavigational";
 
 export const CSUpNavNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <UpNav
       className={className}
       style={style}
@@ -300,10 +300,10 @@ export const CSUpNavNavigational = memo(
   ),
 );
 
-CSUpNavNavigational.displayName = 'CSUpNavNavigational';
+CSUpNavNavigational.displayName = "CSUpNavNavigational";
 
 export const CSZoomInNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ZoomIn
       className={className}
       style={style}
@@ -312,10 +312,10 @@ export const CSZoomInNavigational = memo(
   ),
 );
 
-CSZoomInNavigational.displayName = 'CSZoomInNavigational';
+CSZoomInNavigational.displayName = "CSZoomInNavigational";
 
 export const CSZoomOutNavigational = memo(
-  ({ className = '', style = {}, onClick = null }) => (
+  ({ className = "", style = {}, onClick = null }) => (
     <ZoomOut
       className={className}
       style={style}
@@ -324,4 +324,4 @@ export const CSZoomOutNavigational = memo(
   ),
 );
 
-CSZoomOutNavigational.displayName = 'CSZoomOutNavigational';
+CSZoomOutNavigational.displayName = "CSZoomOutNavigational";

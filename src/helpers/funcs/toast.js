@@ -1,12 +1,12 @@
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Toast from 'react-bootstrap/Toast';
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Toast from "react-bootstrap/Toast";
 
 export const ToastSuccess = ({ showToast, onClose }) => {
   return (
     <div
       className="position-relative"
-      style={{ display: 'flex', justifyContent: 'center', color: '#fff' }}
+      style={{ display: "flex", justifyContent: "center", color: "#fff" }}
     >
       <Row>
         <Col xs={12}>
@@ -27,7 +27,7 @@ export const ToastSuccess = ({ showToast, onClose }) => {
 
 export const ToastErr = ({ showToast, onClose }) => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff' }}>
+    <div style={{ display: "flex", justifyContent: "center", color: "#fff" }}>
       <Row>
         <Col xs={12}>
           <Toast

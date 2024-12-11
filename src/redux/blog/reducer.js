@@ -165,7 +165,7 @@ const reducer = handleActions(
     [Actions.resetBlogsState]: () => initialState,
     // #endregion
   },
-  initialState
+  initialState,
 );
 
 export default reducer;

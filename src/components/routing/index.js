@@ -1,15 +1,14 @@
-import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React from "react";
+import { Route, Switch } from "react-router-dom";
 
 // import routers
-import { routerAuth, routerUser } from '~/routers';
+import { routerAdmin, routerAuth, routerUser } from "~/routers";
 
 // import layouts
-import { AdminLayout, AuthLayout, UserLayout } from '~/layouts';
+import { AdminLayout, AuthLayout, UserLayout } from "~/layouts";
 
 // import others
-import { NotFoundPage } from '~/pages/Other';
-import { routerAdmin } from '~/routers/routerAdmin';
+import { NotFoundPage } from "~/pages/Other";
 
 export const Routing = () => (
   <Switch>
@@ -19,7 +18,7 @@ export const Routing = () => (
     {routerUser.map(({ id, path, component }) => (
       <UserLayout key={id} path={path} component={component} exact />
     ))}
-     {routerAdmin.map(({ id, path, component }) => (
+    {routerAdmin.map(({ id, path, component }) => (
       <AdminLayout key={id} path={path} component={component} exact />
     ))}
     <Route path="*" component={NotFoundPage} exact />

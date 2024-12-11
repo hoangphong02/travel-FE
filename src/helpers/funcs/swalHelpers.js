@@ -1,11 +1,11 @@
-import React from 'react';
-import Swal from 'sweetalert2';
-import withReactContent from 'sweetalert2-react-content';
+import React from "react";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
-import ConfirmationIcon from '~/assets/images/components/swal/confirm.svg';
-import ErrorIcon from '~/assets/images/components/swal/error.svg';
-import InfoIcon from '~/assets/images/components/swal/info.svg';
-import SuccessIcon from '~/assets/images/components/swal/success.svg';
+import ConfirmationIcon from "~/assets/images/components/swal/confirm.svg";
+import ErrorIcon from "~/assets/images/components/swal/error.svg";
+import InfoIcon from "~/assets/images/components/swal/info.svg";
+import SuccessIcon from "~/assets/images/components/swal/success.svg";
 
 const MySwal = withReactContent(Swal);
 
@@ -21,8 +21,8 @@ export const swalPositiveConfirmation = (
     title: <>{title}</>,
     html: <p>{content}</p>,
     customClass: {
-      confirmButton: 'primary',
-      cancelButton: 'primary-outline',
+      confirmButton: "primary",
+      cancelButton: "primary-outline",
     },
     showCancelButton: cancelButtonText?.trim()?.length > 0,
     cancelButtonText,
@@ -48,8 +48,8 @@ export const swalNegativeConfirmation = (
     title: <>{title}</>,
     html: <p>{content}</p>,
     customClass: {
-      confirmButton: 'danger',
-      cancelButton: 'danger-outline',
+      confirmButton: "danger",
+      cancelButton: "danger-outline",
     },
     showCancelButton: cancelButtonText?.trim()?.length > 0,
     cancelButtonText,
@@ -74,7 +74,7 @@ export const swalSuccess = (
     title: <>{title}</>,
     html: <p>{content}</p>,
     customClass: {
-      confirmButton: 'primary',
+      confirmButton: "primary",
     },
     showCancelButton: false,
     confirmButtonText,
@@ -98,7 +98,7 @@ export const swalError = (
     title: <>{title}</>,
     html: <p>{content}</p>,
     customClass: {
-      confirmButton: 'danger',
+      confirmButton: "danger",
     },
     showCancelButton: false,
     confirmButtonText,
@@ -123,8 +123,8 @@ export const swalWarning = (
     title: <>{title}</>,
     html: <p>{content}</p>,
     customClass: {
-      confirmButton: 'warning',
-      cancelButton: 'warning-outline',
+      confirmButton: "warning",
+      cancelButton: "warning-outline",
     },
     showCancelButton: cancelButtonText?.trim()?.length > 0,
     cancelButtonText,

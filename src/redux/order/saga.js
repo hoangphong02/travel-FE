@@ -9,7 +9,7 @@ function* getAllPointHistory({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/point-histories?${payload}`)
-        : () => axiosMicro.get("/point-histories?", { params: payload })
+        : () => axiosMicro.get("/point-histories?", { params: payload }),
     );
     yield put(Actions.getAllPointHistorySuccess(response.data));
   } catch (error) {
@@ -25,7 +25,7 @@ function* getAllOrder({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/orders?${payload}`)
-        : () => axiosMicro.get("/orders?", { params: payload })
+        : () => axiosMicro.get("/orders?", { params: payload }),
     );
     yield put(Actions.getAllOrderSuccess(response.data));
   } catch (error) {

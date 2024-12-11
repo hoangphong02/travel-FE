@@ -9,7 +9,7 @@ function* getAllProducts({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/product/getAll?${payload}`)
-        : () => axiosMicro.get("/product/getAll", { params: payload })
+        : () => axiosMicro.get("/product/getAll", { params: payload }),
     );
     yield put(Actions.getAllProductsSuccess(response.data));
   } catch (error) {
@@ -25,7 +25,7 @@ function* getListProducts({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/products/list?${payload}`)
-        : () => axiosMicro.get("/products/list", { params: payload })
+        : () => axiosMicro.get("/products/list", { params: payload }),
     );
     yield put(Actions.getListProductsSuccess(response.data));
   } catch (error) {
@@ -51,7 +51,7 @@ function* createProduct({ payload }) {
 function* updateProduct({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.patch(`/products/${payload.id}`, payload.body)
+      axiosMicro.patch(`/products/${payload.id}`, payload.body),
     );
     yield put(Actions.updateProductSuccess(response.data));
   } catch (error) {

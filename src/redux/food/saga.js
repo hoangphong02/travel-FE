@@ -9,7 +9,7 @@ function* getAllFoods({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/food?${payload}`)
-        : () => axiosMicro.get("/food", { params: payload })
+        : () => axiosMicro.get("/food", { params: payload }),
     );
     yield put(Actions.getAllFoodsSuccess(response.data));
   } catch (error) {
@@ -40,7 +40,7 @@ function* createFood({ payload }) {
 function* updateFood({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.put(`/food/${payload.id}`, payload.body)
+      axiosMicro.put(`/food/${payload.id}`, payload.body),
     );
     yield put(Actions.updateFoodsSuccess(response.data));
   } catch (error) {

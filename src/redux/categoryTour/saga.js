@@ -9,7 +9,7 @@ function* getAllCategoryTours({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/category-tour?${payload}`)
-        : () => axiosMicro.get("/category-tour", { params: payload })
+        : () => axiosMicro.get("/category-tour", { params: payload }),
     );
     yield put(Actions.getAllCategoryTourSuccess(response.data));
   } catch (error) {
@@ -23,7 +23,7 @@ function* getAllCategoryTours({ payload }) {
 function* createCategoryTour({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.post("/category-tour", payload)
+      axiosMicro.post("/category-tour", payload),
     );
     if (response?.data?.status === "OK") {
       yield put(Actions.createCategoryTourSuccess(response.data));
@@ -42,7 +42,7 @@ function* createCategoryTour({ payload }) {
 function* updateCategoryTour({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.put(`/category-tour/${payload.id}`, payload.body)
+      axiosMicro.put(`/category-tour/${payload.id}`, payload.body),
     );
     if (response?.data?.status === "OK") {
       yield put(Actions.updateCategoryTourSuccess(response.data));

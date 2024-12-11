@@ -1,7 +1,7 @@
 import { createAction } from "redux-actions";
 
 export const callApiFirstTimeRequest = createAction(
-  "CALL_API_FIRST_TIME_REQUEST"
+  "CALL_API_FIRST_TIME_REQUEST",
 );
 
 export const getAllUserRequest = createAction("GET_ALL_USER_REQUEST");
@@ -21,17 +21,17 @@ export const updateAddressesConfig = createAction("UPDATE_ADDRESSES_CONFIG");
 export const updateAddressesProfile = createAction("UPDATE_ADDRESSES_PROFILE");
 
 export const updateInformationUserRequest = createAction(
-  "UPDATE_INFORMATION_USER_REQUEST"
+  "UPDATE_INFORMATION_USER_REQUEST",
 );
 
 export const getWorkSchedulesRequest = createAction(
-  "GET_WORK_SCHEDULES_REQUEST"
+  "GET_WORK_SCHEDULES_REQUEST",
 );
 export const getWorkSchedulesSuccess = createAction(
-  "GET_WORK_SCHEDULES_SUCCESS"
+  "GET_WORK_SCHEDULES_SUCCESS",
 );
 export const getWorkSchedulesFailure = createAction(
-  "GET_WORK_SCHEDULES_FAILURE"
+  "GET_WORK_SCHEDULES_FAILURE",
 );
 
 export const changePointRequest = createAction("CHANGE_POINT_REQUEST");

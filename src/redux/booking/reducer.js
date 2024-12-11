@@ -356,7 +356,7 @@ const reducer = handleActions(
     [Actions.resetBookingState]: () => initialState,
     // #endregion
   },
-  initialState
+  initialState,
 );
 
 export default reducer;

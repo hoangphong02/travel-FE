@@ -9,7 +9,7 @@ function* getAllBookings({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/booking?${payload}`)
-        : () => axiosMicro.get("/booking", { params: payload })
+        : () => axiosMicro.get("/booking", { params: payload }),
     );
     yield put(Actions.getAllBookingSuccess(response.data));
   } catch (error) {
@@ -25,7 +25,7 @@ function* getAllBookingGroup({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/booking/groups?${payload}`)
-        : () => axiosMicro.get("/booking/groups", { params: payload })
+        : () => axiosMicro.get("/booking/groups", { params: payload }),
     );
     yield put(Actions.getAllBookingGroupSuccess(response.data));
   } catch (error) {
@@ -41,7 +41,7 @@ function* getDetailBookings({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/booking/${payload.id}`)
-        : () => axiosMicro.get(`/booking/${payload.id}`, { params: payload })
+        : () => axiosMicro.get(`/booking/${payload.id}`, { params: payload }),
     );
     yield put(Actions.getDetailBookingSuccess(response.data));
   } catch (error) {
@@ -106,7 +106,7 @@ function* getStatistical({ payload }) {
 function* updateBooking({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.put(`/booking/${payload.id}`, payload.body)
+      axiosMicro.put(`/booking/${payload.id}`, payload.body),
     );
     yield put(Actions.updateBookingSuccess(response.data));
   } catch (error) {
@@ -132,7 +132,7 @@ function* deleteBooking({ payload }) {
 function* addGuideBooking({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.post("/booking/group/assignment", payload)
+      axiosMicro.post("/booking/group/assignment", payload),
     );
     if (response?.data?.status === "OK") {
       yield put(Actions.addGuideBookingSuccess(response.data));
@@ -151,7 +151,7 @@ function* addGuideBooking({ payload }) {
 function* updatePaymentBooking({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.put(`/booking/${payload.id}/paid`, payload.body)
+      axiosMicro.put(`/booking/${payload.id}/paid`, payload.body),
     );
     yield put(Actions.updatePaymentBookingSuccess(response.data));
   } catch (error) {
@@ -165,7 +165,7 @@ function* updatePaymentBooking({ payload }) {
 function* updateChecking({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.put(`/booking/checking/${payload.id}`, payload.body)
+      axiosMicro.put(`/booking/checking/${payload.id}`, payload.body),
     );
     yield put(Actions.updateCheckingSuccess(response.data));
   } catch (error) {

@@ -246,7 +246,7 @@ const reducer = handleActions(
     [Actions.resetTourState]: () => initialState,
     // #endregion
   },
-  initialState
+  initialState,
 );
 
 export default reducer;

@@ -1,7 +1,7 @@
-import axios from 'axios';
+import axios from "axios";
 // import { routesAuth } from '~/configs';
-import { STORAGE_KEY } from '../constants';
-import { configMicro } from './serverMicro';
+import { STORAGE_KEY } from "../constants";
+import { configMicro } from "./serverMicro";
 
 const axiosMicro = axios.create({
   baseURL: configMicro.API_URL,
@@ -13,9 +13,9 @@ axiosMicro.interceptors.request.use(
   async (config) => {
     const accessToken = localStorage.getItem(STORAGE_KEY.ACCESS_TOKEN);
     config.headers = {
-      Accept: 'application/json',
+      Accept: "application/json",
       Authorization: accessToken,
-      Token: `${accessToken}`
+      Token: `${accessToken}`,
     };
 
     return config;
@@ -30,10 +30,10 @@ axiosMicro.interceptors.response.use(
   async (error) => {
     try {
       const originalRequest = error.config;
-      if (error?.response?.status === 403 && !originalRequest['_retry']) {
-        originalRequest['_retry'] = true;
+      if (error?.response?.status === 403 && !originalRequest["_retry"]) {
+        originalRequest["_retry"] = true;
         const refreshToken = localStorage.getItem(STORAGE_KEY.REFRESH_TOKEN);
-        axios.defaults.headers.common['Authorization'] = refreshToken;
+        axios.defaults.headers.common["Authorization"] = refreshToken;
         return axiosMicro(originalRequest);
       }
       if (error?.response?.status === 401) {

@@ -1,28 +1,28 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { Button, Spinner } from 'react-bootstrap';
-import { ToastContainer, toast } from 'react-toastify';
+import React from "react";
+import { useEffect } from "react";
+import { Button, Spinner } from "react-bootstrap";
+import { ToastContainer, toast } from "react-toastify";
 
-import { ReactComponent as SuccessIcon } from '~/assets/images/iconography/Other/Check2.svg';
+import { ReactComponent as SuccessIcon } from "~/assets/images/iconography/Other/Check2.svg";
 import {
   CSExclamationSolid,
   CSInfoSolid,
   CSMinusCircleSolid,
-} from '~/components/iconography/Solid';
+} from "~/components/iconography/Solid";
 
 export const ToastSuccess = ({
   show = false,
-  heading = '',
-  content = '',
-  button1Content = '',
+  heading = "",
+  content = "",
+  button1Content = "",
   handleClickButton1 = () => {},
-  button2Content = '',
+  button2Content = "",
   handleClickButton2 = () => {},
-  theme = 'light',
+  theme = "light",
   onHide = () => {},
   isLoading = false,
-  headingLoading = '',
-  contentLoading = '',
+  headingLoading = "",
+  contentLoading = "",
   timeClose = 5000,
 }) => {
   const notify = () =>
@@ -31,7 +31,7 @@ export const ToastSuccess = ({
         {heading && <h1>{heading}</h1>}
         {content && <p>{content}</p>}
         {(button1Content || button2Content) && (
-          <div className="d-flex align-items-center" style={{ gap: '24px' }}>
+          <div className="d-flex align-items-center" style={{ gap: "24px" }}>
             {button1Content && (
               <Button onClick={handleClickButton1}>{button1Content}</Button>
             )}
@@ -51,7 +51,7 @@ export const ToastSuccess = ({
         progress: 0,
         icon: <SuccessIcon />,
         theme,
-        toastId: 'notify-success',
+        toastId: "notify-success",
         onClose: onHide,
       },
     );
@@ -72,7 +72,7 @@ export const ToastSuccess = ({
         progress: 0,
         icon: <Spinner animation="border" />,
         theme,
-        toastId: 'notify-success-loading',
+        toastId: "notify-success-loading",
       },
     );
 
@@ -98,17 +98,17 @@ export const ToastSuccess = ({
 
 export const ToastError = ({
   show = false,
-  heading = '',
-  content = '',
-  button1Content = '',
+  heading = "",
+  content = "",
+  button1Content = "",
   handleClickButton1 = () => {},
-  button2Content = '',
+  button2Content = "",
   handleClickButton2 = () => {},
-  theme = 'light',
+  theme = "light",
   onHide = () => {},
   isLoading = false,
-  headingLoading = '',
-  contentLoading = '',
+  headingLoading = "",
+  contentLoading = "",
   timeClose = 5000,
 }) => {
   const notify = () =>
@@ -117,7 +117,7 @@ export const ToastError = ({
         {heading && <h1>{heading}</h1>}
         {content && <p>{content}</p>}
         {(button1Content || button2Content) && (
-          <div className="d-flex align-items-center" style={{ gap: '24px' }}>
+          <div className="d-flex align-items-center" style={{ gap: "24px" }}>
             {button1Content && (
               <Button onClick={handleClickButton1}>{button1Content}</Button>
             )}
@@ -137,7 +137,7 @@ export const ToastError = ({
         progress: 0,
         icon: <CSMinusCircleSolid customClassName="fill-red" />,
         theme,
-        toastId: 'notify-error',
+        toastId: "notify-error",
         onClose: onHide,
       },
     );
@@ -158,7 +158,7 @@ export const ToastError = ({
         progress: 0,
         icon: <Spinner animation="border" />,
         theme,
-        toastId: 'notify-error-loading',
+        toastId: "notify-error-loading",
       },
     );
 
@@ -184,17 +184,17 @@ export const ToastError = ({
 
 export const ToastWarning = ({
   show = false,
-  heading = '',
-  content = '',
-  button1Content = '',
+  heading = "",
+  content = "",
+  button1Content = "",
   handleClickButton1 = () => {},
-  button2Content = '',
+  button2Content = "",
   handleClickButton2 = () => {},
-  theme = 'light',
+  theme = "light",
   onHide = () => {},
   isLoading = false,
-  headingLoading = '',
-  contentLoading = '',
+  headingLoading = "",
+  contentLoading = "",
   timeClose = 5000,
 }) => {
   const notify = () =>
@@ -203,7 +203,7 @@ export const ToastWarning = ({
         {heading && <h1>{heading}</h1>}
         {content && <p>{content}</p>}
         {(button1Content || button2Content) && (
-          <div className="d-flex align-items-center" style={{ gap: '24px' }}>
+          <div className="d-flex align-items-center" style={{ gap: "24px" }}>
             {button1Content && (
               <Button onClick={handleClickButton1}>{button1Content}</Button>
             )}
@@ -223,7 +223,7 @@ export const ToastWarning = ({
         progress: 0,
         icon: <CSExclamationSolid customClassName="fill-orange" />,
         theme,
-        toastId: 'notify-warning',
+        toastId: "notify-warning",
         onClose: onHide,
       },
     );
@@ -244,7 +244,7 @@ export const ToastWarning = ({
         progress: 0,
         icon: <Spinner animation="border" />,
         theme,
-        toastId: 'notify-warning-loading',
+        toastId: "notify-warning-loading",
       },
     );
 
@@ -270,17 +270,17 @@ export const ToastWarning = ({
 
 export const ToastInformational = ({
   show = false,
-  heading = '',
-  content = '',
-  button1Content = '',
+  heading = "",
+  content = "",
+  button1Content = "",
   handleClickButton1 = () => {},
-  button2Content = '',
+  button2Content = "",
   handleClickButton2 = () => {},
-  theme = 'light',
+  theme = "light",
   onHide = () => {},
   isLoading = false,
-  headingLoading = '',
-  contentLoading = '',
+  headingLoading = "",
+  contentLoading = "",
   timeClose = 5000,
 }) => {
   const notify = () =>
@@ -289,7 +289,7 @@ export const ToastInformational = ({
         {heading && <h1>{heading}</h1>}
         {content && <p>{content}</p>}
         {(button1Content || button2Content) && (
-          <div className="d-flex align-items-center" style={{ gap: '24px' }}>
+          <div className="d-flex align-items-center" style={{ gap: "24px" }}>
             {button1Content && (
               <Button onClick={handleClickButton1}>{button1Content}</Button>
             )}
@@ -309,7 +309,7 @@ export const ToastInformational = ({
         progress: 0,
         icon: <CSInfoSolid customClassName="fill-blue" />,
         theme,
-        toastId: 'notify-informational',
+        toastId: "notify-informational",
         onClose: onHide,
       },
     );
@@ -330,7 +330,7 @@ export const ToastInformational = ({
         progress: 0,
         icon: <Spinner animation="border" />,
         theme,
-        toastId: 'notify-informational-loading',
+        toastId: "notify-informational-loading",
       },
     );
 

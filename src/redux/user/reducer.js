@@ -171,7 +171,7 @@ const reducer = handleActions(
                 : payload.type === "delete"
                   ? [
                       ...state.configResponse.data.addresses.filter(
-                        (item) => item.id !== payload.id
+                        (item) => item.id !== payload.id,
                       ),
                     ]
                   : [...state.configResponse.data.addresses],
@@ -216,7 +216,7 @@ const reducer = handleActions(
     [Actions.resetUserState]: () => initialState,
     // #endregion
   },
-  initialState
+  initialState,
 );
 
 export default reducer;

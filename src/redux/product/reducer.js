@@ -1,6 +1,6 @@
-import { handleActions } from 'redux-actions';
+import { handleActions } from "redux-actions";
 
-import * as Actions from './actions';
+import * as Actions from "./actions";
 
 const initialState = {
   // Get All Product

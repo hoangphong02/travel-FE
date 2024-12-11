@@ -1,2 +1,2 @@
-export * from './HeaderAdmin';
-export * from './SideBar';
+export * from "./HeaderAdmin";
+export * from "./SideBar";

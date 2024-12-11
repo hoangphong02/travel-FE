@@ -9,7 +9,7 @@ function* getAllCategoryBlogs({ payload }) {
     const response = yield call(
       typeof payload === "string"
         ? () => axiosMicro.get(`/category?${payload}`)
-        : () => axiosMicro.get("/category", { params: payload })
+        : () => axiosMicro.get("/category", { params: payload }),
     );
     yield put(Actions.getAllCategorySuccess(response.data));
   } catch (error) {
@@ -40,7 +40,7 @@ function* createCategory({ payload }) {
 function* updateCategory({ payload }) {
   try {
     const response = yield call(() =>
-      axiosMicro.put(`/category/${payload.id}`, payload.body)
+      axiosMicro.put(`/category/${payload.id}`, payload.body),
     );
     if (response?.data?.status === "OK") {
       yield put(Actions.updateCategorySuccess(response.data));

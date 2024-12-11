@@ -171,7 +171,7 @@ const reducer = handleActions(
     [Actions.resetCommentsState]: () => initialState,
     // #endregion
   },
-  initialState
+  initialState,
 );
 
 export default reducer;

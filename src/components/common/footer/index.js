@@ -1,1 +1,1 @@
-export * from './FooterAction';
+export * from "./FooterAction";

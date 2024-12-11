@@ -7,14 +7,14 @@ export const getSessionOfDay = () => {
   const date = new Date();
   const hh = date.getHours();
 
-  let session = '';
+  let session = "";
 
   if (hh >= 5 && hh <= 11) {
-    session = 'morning';
+    session = "morning";
   } else if (hh >= 12 && hh <= 17) {
-    session = 'afternoon';
+    session = "afternoon";
   } else {
-    session = 'evening';
+    session = "evening";
   }
 
   return session;
